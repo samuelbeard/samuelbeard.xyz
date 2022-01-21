@@ -2,11 +2,11 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
     mode: "jit",
-    purge: [
+    content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: 'media',
     theme: {
         extend: {
             fontFamily: {
@@ -15,12 +15,4 @@ module.exports = {
             },
         },
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [
-        require("@tailwindcss/forms"),
-        // require("tailwind-scrollbar"),
-        // require("tailwind-scrollbar-hide"),
-    ],
 }

@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>
-      <p>Samuel Beard</p>
+    <div className="h-screen w-screen bg-slate-500 flex justify-center items-center">
+      <h1>Samuel Beard</h1>
     </div>
   )
 }
