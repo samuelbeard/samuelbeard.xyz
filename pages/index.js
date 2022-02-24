@@ -17,14 +17,16 @@ import {
     RiServerFill,
     RiToolsFill,
     RiGlobalLine,
+    RiCheckFill,
 } from "react-icons/ri"
+import { MdSupport } from "react-icons/md"
 
 export default function Home() {
     return (
         <div>
             <div className="bg-amber-500 flex justify-center items-center flex-col py-36">
                 <h1 className="h1 text-7xl m-0 text-white">Samuel Beard</h1>
-                <h2 className="h2 m-0 text-violet-800">Digital Designer</h2>
+                <h2 className="h2 m-0 text-violet-500">Digital Designer</h2>
             </div>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-12 mx-auto">
@@ -46,11 +48,13 @@ export default function Home() {
                     </div>
                     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                            <img
-                                alt="content"
-                                class="w-full rounded-lg"
-                                src="https://placehold.co/800x600"
-                            />
+                            <div class="rounded-lg h-64 overflow-hidden bg-zinc-100 p-5 shadow-lg">
+                                <img
+                                    alt="content"
+                                    class="w-full rounded-lg"
+                                    src="/img/undraw_growth_curve.svg"
+                                />
+                            </div>
                             <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
                                 Convert
                             </h2>
@@ -61,11 +65,11 @@ export default function Home() {
                             </p>
                         </div>
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                            <div class="rounded-lg h-64 overflow-hidden">
+                            <div class="rounded-lg h-64 overflow-hidden bg-zinc-100 p-5 shadow-lg">
                                 <img
                                     alt="content"
                                     class="w-full rounded-lg"
-                                    src="https://placehold.co/800x600"
+                                    src="/img/undraw_search.svg"
                                 />
                             </div>
                             <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
@@ -78,11 +82,11 @@ export default function Home() {
                             </p>
                         </div>
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                            <div class="rounded-lg h-64 overflow-hidden">
+                            <div class="rounded-lg h-64 overflow-hidden bg-zinc-100 p-5 shadow-lg">
                                 <img
                                     alt="content"
                                     class="w-full rounded-lg"
-                                    src="https://placehold.co/800x600"
+                                    src="/img/undraw_web_devices.svg"
                                 />
                             </div>
                             <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
@@ -96,6 +100,58 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <section className="dark:bg-coolGray-800 dark:text-coolGray-100">
+                    <div className="container flex flex-col-reverse mx-auto lg:flex-row">
+                        <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-coolGray-900">
+                            <div className="flex space-x-2 sm:space-x-4">
+                                <RiCheckFill className="flex-shrink-0 w-6 h-6" />
+                                <div className="space-y-2">
+                                    <p className="text-lg font-medium leading-snug">
+                                        Blogs
+                                    </p>
+                                    <p className="leading-snug">
+                                        Add a blog to engage your audience and
+                                        build a reputation for
+                                        your&nbsp;business.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex space-x-2 sm:space-x-4">
+                                <RiCheckFill className="flex-shrink-0 w-6 h-6" />
+                                <div className="space-y-2">
+                                    <p className="text-lg font-medium leading-snug">
+                                        Ecommerce
+                                    </p>
+                                    <p className="leading-snug">
+                                        Build a store that is fast, efficient,
+                                        and easy to use.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex space-x-2 sm:space-x-4">
+                                <RiCheckFill className="flex-shrink-0 w-6 h-6" />
+                                <div className="space-y-2">
+                                    <p className="text-lg font-medium leading-snug">
+                                        Automation
+                                    </p>
+                                    <p className="leading-snug">
+                                        Automate repetative tasks such as email,
+                                        support and data collection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:w-1/2 xl:w-3/5 bg-none">
+                            <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
+                                <img
+                                    src="/img/undraw_website_builder.svg"
+                                    alt=""
+                                    className="rounded-lg shadow-lg aspect-video sm:min-h-96 bg-zinc-100 p-5"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 pt-12 mx-auto">
                         <div class="flex flex-wrap w-full mb-5 flex-col items-center text-center">
@@ -105,7 +161,7 @@ export default function Home() {
                         </div>
                         <div class="flex flex-wrap -m-4">
                             <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
                                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
                                         <RiPaintBrushFill class="text-white w-6 h-6" />
                                     </div>
@@ -115,7 +171,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
                                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
                                         <RiToolsFill class="text-white w-6 h-6" />
                                     </div>
@@ -125,7 +181,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
                                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
                                         <RiServerFill class="text-white w-6 h-6" />
                                     </div>
@@ -135,7 +191,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
                                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
                                         <RiGlobalLine class="text-white w-6 h-6" />
                                     </div>
@@ -145,7 +201,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
                                     <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
                                         <RiCalendarFill class="text-white w-6 h-6" />
                                     </div>
@@ -154,66 +210,29 @@ export default function Home() {
                                     </h2>
                                 </div>
                             </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
+                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
+                                        <MdSupport class="text-white w-6 h-6" />
+                                    </div>
+                                    <h2 class="text-lg text-white font-bold title-font mb-0">
+                                        Support
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <div className="w-full flex justify-center items-center mt-24">
+                <div className="w-full flex justify-center items-center mt-24 mb-24">
                     <Link href="/web">
-                        <a className="py-3 px-6 text-xl bg-violet-500 text-white rounded-full shadow hover:bg-violet-600 transition-all">
+                        <a className="py-3 px-6 text-xl bg-violet-500 text-white rounded-full shadow-lg hover:shadow-2xl hover:bg-violet-600 transition-all">
                             Web Development Packages
                         </a>
                     </Link>
                 </div>
             </section>
-            {/* <WebDevSection /> */}
-            {/* <Hero /> */}
-            {/* <Header /> */}
-            {/* <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                        <img
-                            className="object-cover object-center rounded"
-                            alt="hero"
-                            src="https://dummyimage.com/720x600"
-                        />
-                    </div>
-                    <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                            Before they sold out
-                            <br className="hidden lg:inline-block" />
-                            readymade gluten
-                        </h1>
-                        <p className="mb-8 leading-relaxed">
-                            Copper mug try-hard pitchfork pour-over freegan
-                            heirloom neutra air plant cold-pressed tacos poke
-                            beard tote bag. Heirloom echo park mlkshk tote bag
-                            selvage hot chicken authentic tumeric truffaut
-                            hexagon try-hard chambray.
-                        </p>
-                        <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-amber-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">
-                                Button
-                            </button>
-                            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                                Button
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-            {/* <FeaturesSection /> */}
-            {/* <WebDesignSection /> */}
-            {/* <GraphicDesignSection /> */}
             {/* <GallerySection /> */}
             <Footer />
-            {/* <div className="background h-screen w-screen bg-slate-600 flex justify-center items-center flex-col">
-                <h1 className="text-slate-200 text-6xl font-bold uppercase">
-                    Samuel Beard
-                </h1>
-                <h2 className="text-slate-400 text-2xl font-semibold">
-                    I'll get around to building something here soon...
-                </h2>
-            </div> */}
         </div>
     )
 }

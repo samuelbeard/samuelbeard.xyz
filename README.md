@@ -11,9 +11,10 @@
 
 ---
 
-Clean, simple webisites that convert.
+## Colours
 
-I build websites with three goals in mind.
-1. Convert - Whatever you are selling, the website will guide potential customers to it and give them the information and confidence to purchase.
-2. SEO (Search Engine Optimisation) - The website will be built in such a way that it can rank highly in search engines. Thus attracting the right customers.
-3. Fast and responsive - The website will be fast and look great on any device. Reducing friction for a visitor and increasing conversions.
+- amber-500
+- violet-500
+- zinc-100
+- zinc-700
+- zinc-900
