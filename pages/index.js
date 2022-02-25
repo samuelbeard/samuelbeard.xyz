@@ -20,25 +20,27 @@ import {
     RiCheckFill,
 } from "react-icons/ri"
 import { MdSupport } from "react-icons/md"
+import HandleItem from "../components/HandleItem"
 
 export default function Home() {
     return (
         <div>
-            <div className="bg-amber-500 flex justify-center items-center flex-col py-36">
-                <h1 className="h1 text-7xl m-0 text-white">Samuel Beard</h1>
-                <h2 className="h2 m-0 text-violet-500">Digital Designer</h2>
+            <div className="bg-amber-500 flex justify-center items-center flex-col py-12 sm:py-36">
+                <h1 className="h1 text-3xl sm:text-7xl m-0 text-white">
+                    Samuel Beard
+                </h1>
+                <h2 className="h2 text-xl sm:text-3xl m-0 text-zinc-900">
+                    Digital Designer
+                </h2>
             </div>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-12 mx-auto">
                     <div class="flex flex-col">
-                        {/* <div class="h-1 bg-gray-200 rounded overflow-hidden">
-                            <div class="w-24 h-full bg-violet-800"></div>
-                        </div> */}
                         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                             <h1 class="sm:w-2/5 text-gray-900 font-bold title-font text-4xl mb-2 sm:mb-0">
                                 Web Development
                             </h1>
-                            <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0 text-right text-2xl">
+                            <p class="sm:w-3/5 leading-relaxed sm:pl-10 pl-0 sm:text-right text-2xl">
                                 Clean, simple websites that convert.
                             </p>
                         </div>
@@ -160,74 +162,46 @@ export default function Home() {
                             </h1>
                         </div>
                         <div class="flex flex-wrap -m-4">
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <RiPaintBrushFill class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Design
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <RiToolsFill class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Build
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <RiServerFill class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Hosting
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <RiGlobalLine class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Deployment
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <RiCalendarFill class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Maintenance
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="xl:w-1/3 md:w-1/2 p-4">
-                                <div class="p-6 rounded-lg flex justify-between items-center bg-amber-500 shadow-lg">
-                                    <div class="w-10 h-10 inline-flex items-center justify-center rounded-full border-2 border-white">
-                                        <MdSupport class="text-white w-6 h-6" />
-                                    </div>
-                                    <h2 class="text-lg text-white font-bold title-font mb-0">
-                                        Support
-                                    </h2>
-                                </div>
-                            </div>
+                            <HandleItem
+                                title="Design"
+                                icon={
+                                    <RiPaintBrushFill class="text-white w-6 h-6" />
+                                }
+                            />
+                            <HandleItem
+                                title="Build"
+                                icon={
+                                    <RiToolsFill class="text-white w-6 h-6" />
+                                }
+                            />
+                            <HandleItem
+                                title="Hosting"
+                                icon={
+                                    <RiServerFill class="text-white w-6 h-6" />
+                                }
+                            />
+                            <HandleItem
+                                title="Deployment"
+                                icon={
+                                    <RiGlobalLine class="text-white w-6 h-6" />
+                                }
+                            />
+                            <HandleItem
+                                title="Maintenance"
+                                icon={
+                                    <RiCalendarFill class="text-white w-6 h-6" />
+                                }
+                            />
+                            <HandleItem
+                                title="Support"
+                                icon={<MdSupport class="text-white w-6 h-6" />}
+                            />
                         </div>
                     </div>
                 </section>
                 <div className="w-full flex justify-center items-center mt-24 mb-24">
                     <Link href="/web">
-                        <a className="py-3 px-6 text-xl bg-violet-500 text-white rounded-full shadow-lg hover:shadow-2xl hover:bg-violet-600 transition-all">
-                            Web Development Packages
-                        </a>
+                        <a className="cta-btn">Web Development Packages</a>
                     </Link>
                 </div>
             </section>
