@@ -11,24 +11,24 @@
     }
 
     .h1 {
-        @apply text-5xl font-bold mt-5 mb-3 text-zinc-900;
+        @apply text-4xl font-bold mt-5 mb-3 text-zinc-900;
     }
 
     .h2 {
-        @apply text-4xl font-semibold mt-5 mb-3 text-zinc-900;
+        @apply text-3xl font-semibold mt-5 mb-3 text-zinc-900;
     }
 
     .h3 {
-        @apply text-3xl font-bold mt-5 mb-3 text-zinc-900;
-    }
-
-    .h4 {
         @apply text-2xl font-bold mt-5 mb-3 text-zinc-900;
     }
 
-    /* Full width container that wraps the entire content of a page (Excluding the header and footer.) */
-    .content {
-        @apply h-screen overflow-y-scroll;
+    .h4 {
+        @apply text-1xl font-bold mt-5 mb-3 text-zinc-900;
+    }
+
+    /* Full width container that wraps the entire content of a page (Including the header and footer.) */
+    .page {
+        @apply min-h-screen flex flex-col justify-between;
     }
 
     /* Full width of the page to encapsulate a section of content. */
@@ -39,15 +39,31 @@
 
     /* Fits content to a padded section with gaps on the sides. */
     .container {
-        @apply w-11/12 lg:w-4/5 max-w-6xl;
+        @apply w-11/12 lg:w-5/12 max-w-4xl;
     }
 
-    .row {
-        @apply grid grid-cols-1 md:grid-cols-6 md:max-w-3xl xl:max-w-6xl mx-auto;
+    .markdown > p {
+        @apply para;
     }
 
-    .cta-btn {
-        @apply py-3 px-6 text-xl bg-violet-500 text-white rounded-full shadow-lg hover:shadow-2xl hover:bg-violet-600 transition-all;
+    .markdown > h2 {
+        @apply text-xl font-bold mt-3 mb-1;
+    }
+
+    .markdown > pre {
+        @apply my-4 py-4 px-5 bg-slate-200 rounded-lg;
+    }
+
+    .markdown > pre > code {
+        @apply font-mono overflow-scroll;
+    }
+
+    .markdown > hr {
+        @apply border-2 my-12 border-slate-500;
+    }
+
+    .markdown > p > code {
+        @apply font-mono text-base bg-slate-200 p-1 rounded;
     }
 }
 
