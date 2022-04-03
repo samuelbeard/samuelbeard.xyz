@@ -89,7 +89,7 @@ export default function Page() {
                                 performance over time.
                             </p>
                         </div>
-                        <div className="max-w-md">
+                        {/* <div className="max-w-md">
                             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full border-4 border-zinc-700">
                                 <RiQuestionFill className="w-8 h-8 text-zinc-700" />
                             </div>
@@ -99,7 +99,7 @@ export default function Page() {
                             <p className="text-sm text-gray-700">
                                 Something else will go here.
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
