@@ -10,7 +10,7 @@ export default function Home() {
             <Header />
             <section className="section">
                 <div className="container lg:w-2/5 max-w-4xl">
-                    <h1 className="h1 text-3xl sm:text-5xl m-0">
+                    <h1 className="h1 text-3xl sm:text-5xl m-0 dark:text-white">
                         Samuel Beard
                     </h1>
                     <p className="para mt-6">
