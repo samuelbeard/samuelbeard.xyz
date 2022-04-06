@@ -1,6 +1,7 @@
 import Head from "next/head"
-import Header from "../../components/Header"
-import { getAllWritingIds, getPostData } from "../../lib/writing"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import { getAllWritingIds, getPostData } from "@/lib/writing"
 import { format, parse } from "date-fns"
 
 const Post = ({ postData }) => {
@@ -11,9 +12,9 @@ const Post = ({ postData }) => {
             </Head>
             <Header />
             <div className="section">
-                <div className="container mb-8">
+                <div className="container">
                     <h1 className="h1 mb-0">{postData.title}</h1>
-                    <h3 className="h3 mt-0">
+                    <h3 className="h3 font-normal mt-0">
                         {format(
                             parse(postData.date, "yyyy-MM-dd", new Date()),
                             "do MMMM yyyy"
@@ -29,7 +30,7 @@ const Post = ({ postData }) => {
                     ))}
                 </div>
             </div>
-            <div className="section">
+            <div className="section mt-8">
                 <div className="container">
                     <div
                         dangerouslySetInnerHTML={{
@@ -39,6 +40,7 @@ const Post = ({ postData }) => {
                     />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

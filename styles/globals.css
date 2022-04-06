@@ -50,6 +50,10 @@
         @apply text-xl font-bold mt-3 mb-1;
     }
 
+    .markdown > h3 {
+        @apply font-bold mt-3 mb-1;
+    }
+
     .markdown > pre {
         @apply my-4 py-4 px-5 bg-slate-200 rounded-lg;
     }
@@ -64,6 +68,14 @@
 
     .markdown > p > code {
         @apply font-mono text-base bg-slate-200 p-1 rounded;
+    }
+
+    .markdown > p > a {
+        @apply underline-offset-4 underline hover:text-slate-400;
+    }
+
+    .markdown > blockquote {
+        @apply my-4 px-5 para border-l-2;
     }
 }
 
