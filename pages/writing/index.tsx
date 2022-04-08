@@ -26,7 +26,7 @@ interface Post {
 }
 
 const Writing: NextPage<Props> = ({ posts }) => {
-    const [currentPosts, setCurrentPosts] = useState<any>(posts)
+    const [currentPosts, setCurrentPosts] = useState<Post[]>(posts)
     const [filter, setFilter] = useState("")
 
     const handleFilter = (e: ChangeEvent<HTMLInputElement>) => {

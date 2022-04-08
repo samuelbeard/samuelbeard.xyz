@@ -12,11 +12,11 @@ const Header: FC = () => {
                             <RiHomeLine className="w-6 h-6" />
                         </a>
                     </Link>
-                    <Link href="/">
+                    {/* <Link href="/">
                         <a className="p-1 rounded hover:bg-slate-400 mx-1 my-1">
                             <RiMusic2Line className="w-6 h-6" />
                         </a>
-                    </Link>
+                    </Link> */}
                     <Link href="/writing">
                         <a className="p-1 rounded hover:bg-slate-400 mx-1 my-1">
                             <RiQuillPenLine className="w-6 h-6" />
