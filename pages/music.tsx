@@ -14,7 +14,10 @@ const Music: NextPage = () => {
             <section className="section">
                 <div className="container grid grid-cols-2 gap-6">
                     {music?.map((post: { title: string; youtube: string }) => (
-                        <div className="bg-slate-200 dark:bg-slate-700 rounded-lg text-center p-4 flex flex-col justify-between">
+                        <div
+                            key={post.title}
+                            className="bg-slate-200 dark:bg-slate-700 rounded-lg text-center p-4 flex flex-col justify-between"
+                        >
                             <h2 className="text-xl font-bold mb-3 dark:text-slate-300">
                                 {post.title}
                             </h2>

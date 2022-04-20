@@ -47,7 +47,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
 
             setCurrentPosts(x.filter(Boolean))
         }
-    }, [filter])
+    }, [filter, posts])
 
     return (
         <div className="page bg-slate-50 dark:bg-slate-800">
