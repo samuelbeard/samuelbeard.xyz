@@ -6,15 +6,17 @@ import { format, parse } from "date-fns"
 
 const Post = ({ postData }) => {
     return (
-        <div className="page">
+        <div className="page bg-slate-50 dark:bg-slate-800">
             <Head>
                 <title>{postData.title}</title>
             </Head>
             <Header />
             <div className="section">
                 <div className="container">
-                    <h1 className="h1 mb-0">{postData.title}</h1>
-                    <h3 className="h3 font-normal mt-0">
+                    <h1 className="h1 mb-0 dark:text-slate-200">
+                        {postData.title}
+                    </h1>
+                    <h3 className="h3 font-normal mt-0 dark:text-slate-200">
                         {format(
                             parse(postData.date, "yyyy-MM-dd", new Date()),
                             "do MMMM yyyy"

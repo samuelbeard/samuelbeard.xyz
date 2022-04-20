@@ -1,32 +1,21 @@
 import { NextPage } from "next"
 import Header from "@/components/Header"
-import { getAllPosts } from "../lib/writing"
 import Footer from "../components/Footer"
-import Link from "next/link"
-import { format, parse } from "date-fns"
 import Head from "next/head"
-import {
-    useState,
-    ChangeEvent,
-    Key,
-    ReactChild,
-    ReactFragment,
-    ReactPortal,
-} from "react"
-import music from "../content/music"
+import music from "../content/music.json"
 
 const Music: NextPage = () => {
     return (
-        <div className="page">
+        <div className="page bg-slate-50 dark:bg-slate-800">
             <Head>
                 <title>Music</title>
             </Head>
             <Header />
             <section className="section">
                 <div className="container grid grid-cols-2 gap-6">
-                    {music?.map(post => (
-                        <div className="bg-slate-200 rounded text-center p-4 flex flex-col justify-between">
-                            <h2 className="text-xl font-bold mb-3">
+                    {music?.map((post: { title: string; youtube: string }) => (
+                        <div className="bg-slate-200 dark:bg-slate-700 rounded-lg text-center p-4 flex flex-col justify-between">
+                            <h2 className="text-xl font-bold mb-3 dark:text-slate-300">
                                 {post.title}
                             </h2>
                             {post.youtube && (

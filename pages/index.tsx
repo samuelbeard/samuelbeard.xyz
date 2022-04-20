@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                     <h1 className="h1 text-3xl sm:text-5xl m-0 dark:text-white">
                         Samuel Beard
                     </h1>
-                    <p className="para mt-6">
+                    <p className="para mt-6 dark:text-slate-400">
                         Hello. My name is (see above) and I&apos;m a WEB
                         DEVELOPER.
                     </p>

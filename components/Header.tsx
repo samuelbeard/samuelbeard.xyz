@@ -9,17 +9,17 @@ const Header: FC = () => {
                 <div className="rounded-lg border-2 flex p-1">
                     <Link href="/">
                         <a className="p-1 rounded hover:bg-slate-400 mx-1 my-1">
-                            <RiHomeLine className="w-6 h-6" />
+                            <RiHomeLine className="w-6 h-6 dark:text-slate-100" />
                         </a>
                     </Link>
-                    {/* <Link href="/">
+                    <Link href="/music">
                         <a className="p-1 rounded hover:bg-slate-400 mx-1 my-1">
-                            <RiMusic2Line className="w-6 h-6" />
+                            <RiMusic2Line className="w-6 h-6 dark:text-slate-100" />
                         </a>
-                    </Link> */}
+                    </Link>
                     <Link href="/writing">
                         <a className="p-1 rounded hover:bg-slate-400 mx-1 my-1">
-                            <RiQuillPenLine className="w-6 h-6" />
+                            <RiQuillPenLine className="w-6 h-6 dark:text-slate-100" />
                         </a>
                     </Link>
                 </div>

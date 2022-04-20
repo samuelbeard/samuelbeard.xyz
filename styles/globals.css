@@ -43,23 +43,23 @@
     }
 
     .markdown > p {
-        @apply para;
+        @apply para dark:text-slate-400;
     }
 
     .markdown > h2 {
-        @apply text-xl font-bold mt-3 mb-1;
+        @apply text-xl font-bold mt-3 mb-1 dark:text-slate-400;
     }
 
     .markdown > h3 {
-        @apply font-bold mt-3 mb-1;
+        @apply font-bold mt-3 mb-1 dark:text-slate-400;
     }
 
     .markdown > pre {
-        @apply my-4 py-4 px-5 bg-slate-200 rounded-lg;
+        @apply my-4 py-4 px-5 bg-slate-200 dark:bg-slate-600 rounded-lg;
     }
 
     .markdown > pre > code {
-        @apply font-mono overflow-scroll;
+        @apply font-mono overflow-scroll dark:text-slate-300;
     }
 
     .markdown > hr {
@@ -67,7 +67,7 @@
     }
 
     .markdown > p > code {
-        @apply font-mono text-base bg-slate-200 p-1 rounded;
+        @apply font-mono text-base bg-slate-200 dark:text-slate-300 dark:bg-slate-600 p-1 rounded;
     }
 
     .markdown > p > a {
@@ -76,6 +76,14 @@
 
     .markdown > blockquote {
         @apply my-4 px-5 para border-l-2;
+    }
+
+    .markdown > ul {
+        @apply list-disc mb-6;
+    }
+
+    .markdown > ul > li {
+        @apply dark:text-slate-400 mb-1 font-serif text-xl;
     }
 
     .video-container {
