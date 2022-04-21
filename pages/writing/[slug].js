@@ -6,7 +6,7 @@ import { format, parse } from "date-fns"
 
 const Post = ({ postData }) => {
     return (
-        <div className="page bg-slate-50 dark:bg-slate-800">
+        <div className="page bg-slate-200 dark:bg-slate-800">
             <Head>
                 <title>{postData.title}</title>
             </Head>

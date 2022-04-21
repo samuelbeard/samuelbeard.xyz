@@ -9,7 +9,7 @@ import Head from "next/head"
 import { useState, useEffect } from "react"
 import { RiCloseLine } from "react-icons/ri"
 
-const filters = ["Linux", "Coding", "Music", "Writing"]
+const filters = ["Linux", "Coding"]
 
 interface Props {
     posts: Post[]
@@ -50,30 +50,30 @@ const Writing: NextPage<Props> = ({ posts }) => {
     }, [filter, posts])
 
     return (
-        <div className="page bg-slate-50 dark:bg-slate-800">
+        <div className="page bg-slate-200 dark:bg-slate-800">
             <Head>
                 <title>Writing</title>
             </Head>
             <div>
                 <Header />
-                <section className="section">
+                <section className="section mt-6">
                     <div className="container">
                         <div className="flex">
                             <input
-                                className="bg-slate-300 px-3 py-1 rounded-l w-2/12 text-center font-bold outline-none focus:outline-none"
+                                className="bg-slate-400 px-3 py-1 rounded-l w-2/12 text-center font-bold outline-none focus:outline-none"
                                 value="Filter"
                                 readOnly
                             />
                             <input
                                 type="text"
-                                className="bg-slate-200 px-3 py-1 xrounded-r w-9/12 outline-none focus:outline-none"
+                                className="bg-slate-300 px-3 py-1 xrounded-r w-9/12 outline-none focus:outline-none"
                                 value={filter}
                                 onChange={e => setFilter(e.target.value)}
                                 autoFocus
                             />
                             <button
                                 onClick={() => setFilter("")}
-                                className="bg-slate-300 px-3 py-1 rounded-r w-1/12 text-center font-bold outline-none focus:outline-none hover:bg-slate-400"
+                                className="bg-slate-400 px-3 py-1 rounded-r w-1/12 text-center font-bold outline-none focus:outline-none hover:bg-slate-400"
                             >
                                 <RiCloseLine className="w-6 h-6" />
                             </button>
@@ -81,7 +81,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                     </div>
                 </section>
                 <section className="section">
-                    <div className="container">
+                    <div className="container text-center">
                         {filters.map(f => (
                             <FilterButton
                                 key={f}
@@ -102,7 +102,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                                     href={`/writing/${post.slug}`}
                                     key={post.slug}
                                 >
-                                    <a className="col-span-2 sm:col-span-1 border-2 rounded-lg p-3 flex flex-col justify-between h-52 hover:bg-slate-600 hover:text-white hover:border-slate-700">
+                                    <a className="col-span-2 sm:col-span-1 rounded-lg p-3 flex flex-col justify-between h-52 card card-hover">
                                         <h2 className="text-xl font-bold dark:text-slate-200">
                                             {post.title}
                                         </h2>

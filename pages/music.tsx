@@ -6,7 +6,7 @@ import music from "../content/music.json"
 
 const Music: NextPage = () => {
     return (
-        <div className="page bg-slate-50 dark:bg-slate-800">
+        <div className="page bg-slate-200 dark:bg-slate-800">
             <Head>
                 <title>Music</title>
             </Head>
@@ -16,7 +16,7 @@ const Music: NextPage = () => {
                     {music?.map((post: { title: string; youtube: string }) => (
                         <div
                             key={post.title}
-                            className="bg-slate-200 dark:bg-slate-700 rounded-lg text-center p-4 flex flex-col justify-between"
+                            className="card rounded-lg text-center p-4 flex flex-col justify-between"
                         >
                             <h2 className="text-xl font-bold mb-3 dark:text-slate-300">
                                 {post.title}
