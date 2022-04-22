@@ -2,46 +2,55 @@
     {
         "title": "Everlong",
         "date": "2020-05-05",
-        "youtube": "OmisFyA8SJA"
+        "youtube": "OmisFyA8SJA",
+        "artist": "Samuel Beard"
     },
     {
         "title": "Timescape",
         "date": "2018-06-03",
-        "youtube": "CqTE13JhCFk"
+        "youtube": "CqTE13JhCFk",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "Song Bird",
         "date": "2018-06-03",
-        "youtube": "gzf8RSE0zKQ"
+        "youtube": "gzf8RSE0zKQ",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "Voices in my Head",
         "date": "2018-06-03",
-        "youtube": "Har4U0qXe30"
+        "youtube": "Har4U0qXe30",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "Wonky Bells",
         "date": "2018-06-03",
-        "youtube": "YB3xGISAk-c"
+        "youtube": "YB3xGISAk-c",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "Melody Pop",
         "date": "2018-06-03",
-        "youtube": "rzcjz2U4v7o"
+        "youtube": "rzcjz2U4v7o",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "AWOLNATION 'Passion' (Blueshift Expanse Remix)",
         "date": "2018-08-23",
-        "youtube": "6oB8QeN35ng"
+        "youtube": "6oB8QeN35ng",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "My First Dubstep",
         "date": "2018-10-12",
-        "youtube": "d3FVMW6tiJc"
+        "youtube": "d3FVMW6tiJc",
+        "artist": "Blueshift Expanse"
     },
     {
         "title": "Wirewool",
         "date": "2018-11-09",
-        "youtube": "7O5qagwzwMs"
+        "youtube": "7O5qagwzwMs",
+        "artist": "Blueshift Expanse"
     }
 ]
