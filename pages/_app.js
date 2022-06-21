@@ -6,6 +6,8 @@ function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <title>Samuel Beard</title>
+
+                <meta name="apple-mobile-web-app-capable" content="yes" />
             </Head>
             <Component {...pageProps} />
         </>
