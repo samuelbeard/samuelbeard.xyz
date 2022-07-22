@@ -27,8 +27,6 @@ const Writing: NextPage<Props> = ({ posts }) => {
     const [filter, setFilter] = useState("")
 
     useEffect(() => {
-        console.log("filter changed")
-
         if (filter === "all" || filter === "") {
             setCurrentPosts(posts)
         } else {
@@ -40,7 +38,6 @@ const Writing: NextPage<Props> = ({ posts }) => {
                 })
 
                 if (allTags.includes(filter.toLowerCase())) {
-                    console.log(`${allTags} includes ${filter}`)
                     return post
                 }
             })
