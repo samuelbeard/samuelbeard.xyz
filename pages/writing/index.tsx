@@ -70,7 +70,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                             />
                             <button
                                 onClick={() => setFilter("")}
-                                className="bg-slate-400 px-3 py-1 rounded-r w-1/12 text-center font-bold outline-none focus:outline-none hover:bg-slate-400"
+                                className="bg-slate-400 px-3 py-1 rounded-r w-1/12 flex justify-center font-bold outline-none focus:outline-none hover:bg-slate-500"
                             >
                                 <RiCloseLine className="w-6 h-6" />
                             </button>
