@@ -96,34 +96,33 @@ const Writing: NextPage<Props> = ({ posts }) => {
                         <>
                             {currentPosts?.map(post => (
                                 <Link
+                                    className="col-span-2 sm:col-span-1 rounded-lg p-3 flex flex-col justify-between h-52 card card-hover"
                                     href={`/writing/${post.slug}`}
                                     key={post.slug}
                                 >
-                                    <a className="col-span-2 sm:col-span-1 rounded-lg p-3 flex flex-col justify-between h-52 card card-hover">
-                                        <h2 className="text-xl font-bold dark:text-slate-200">
-                                            {post.title}
-                                        </h2>
-                                        <div>
-                                            <p className="text-sm p-2 dark:text-slate-400">
-                                                {format(
-                                                    parse(
-                                                        post.date,
-                                                        "yyyy-MM-dd",
-                                                        new Date()
-                                                    ),
-                                                    "do MMMM yyyy"
-                                                )}
-                                            </p>
-                                            {post.tags.map(tag => (
-                                                <button
-                                                    className="bg-slate-500 text-white px-2 py-0.5 rounded text-sm capitalize m-1"
-                                                    key={tag}
-                                                >
-                                                    {tag}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    </a>
+                                    <h2 className="text-xl font-bold dark:text-slate-200">
+                                        {post.title}
+                                    </h2>
+                                    <div>
+                                        <p className="text-sm p-2 dark:text-slate-400">
+                                            {format(
+                                                parse(
+                                                    post.date,
+                                                    "yyyy-MM-dd",
+                                                    new Date()
+                                                ),
+                                                "do MMMM yyyy"
+                                            )}
+                                        </p>
+                                        {post.tags.map(tag => (
+                                            <button
+                                                className="bg-slate-500 text-white px-2 py-0.5 rounded text-sm capitalize m-1"
+                                                key={tag}
+                                            >
+                                                {tag}
+                                            </button>
+                                        ))}
+                                    </div>
                                 </Link>
                             ))}
                         </>
