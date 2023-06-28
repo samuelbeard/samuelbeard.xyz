@@ -53,7 +53,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
             </Head>
             <div>
                 <Header />
-                <section className="section mt-6">
+                {/* <section className="section mt-6">
                     <div className="container">
                         <div className="flex">
                             <input
@@ -76,8 +76,8 @@ const Writing: NextPage<Props> = ({ posts }) => {
                             </button>
                         </div>
                     </div>
-                </section>
-                <section className="section">
+                </section> */}
+                {/* <section className="section">
                     <div className="container text-center">
                         {filters.map(f => (
                             <FilterButton
@@ -88,7 +88,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                             />
                         ))}
                     </div>
-                </section>
+                </section> */}
             </div>
             <section className="section">
                 <div className="container grid grid-cols-2 gap-6">
