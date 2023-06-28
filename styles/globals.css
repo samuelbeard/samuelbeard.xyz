@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader&family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Exo:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,23 +8,23 @@
 @layer components {
     /* Paragraph Styling */
     .para {
-        @apply font-serif text-xl mb-3 leading-relaxed text-slate-200;
+        @apply font-serif text-xl mb-3 leading-relaxed text-slate-800;
     }
 
     .h1 {
-        @apply text-4xl font-bold mt-5 mb-3 text-slate-200;
+        @apply text-4xl font-bold mt-5 mb-3 text-slate-900 font-display;
     }
 
     .h2 {
-        @apply text-3xl font-semibold mt-5 mb-3 text-slate-200;
+        @apply text-3xl font-bold mt-5 mb-3 text-slate-900 font-display;
     }
 
     .h3 {
-        @apply text-2xl font-bold mt-5 mb-3 text-slate-200;
+        @apply text-2xl font-bold mt-5 mb-3 text-slate-900 font-display;
     }
 
     .h4 {
-        @apply text-1xl font-bold mt-5 mb-3 text-slate-200;
+        @apply text-1xl font-bold mt-5 mb-3 text-slate-900 font-display;
     }
 
     .card {
@@ -114,6 +115,14 @@
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .landing-links {
+        @apply border-l-[10px] border-red-600 pl-5 text-lg mt-10;
+    }
+
+    .landing-links > a {
+        @apply block my-3 transition-all hover:ml-3;
     }
 }
 

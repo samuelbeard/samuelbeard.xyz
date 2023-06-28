@@ -3,6 +3,7 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import { NextPage } from "next"
 import Link from "next/link"
+import SidebarDecoration from "../components/SidebarDecoration"
 
 const Home: NextPage = () => {
     return (
@@ -10,44 +11,83 @@ const Home: NextPage = () => {
             <Head>
                 <title>Samuel Beard</title>
             </Head>
-            <div className="absolute top-0 h-screen w-screen bg-stone-800 flex">
-                <div className="border-2 rounded-sm border-slate-100 m-10 w-full flex flex-col justify-between">
-                    <div className="flex flex-col justify-between h-full">
-                        <Header />
-
+            <SidebarDecoration />
+            <div className="min-h-screen xw-screen xflex pl-[150px]">
+                <div className="px-5">
+                    <div className="pl-10 flex flex-col justify-between h-screen">
                         <section className="flex-grow flex flex-col justify-center">
-                            <div className="pl-10">
-                                <h1 className="h1 font-normal text-3xl sm:text-9xl m-0">
-                                    Samuel&nbsp;Beard
+                            <div className="xpl-10">
+                                <h1 className="h1 text-3xl sm:text-8xl m-0">
+                                    Samuel
+                                    <span className="text-red-600">_</span>Beard
                                 </h1>
-                                <h2 className="h2 text-2xl font-extralight m-0 ml-3 text-slate-300">
+                                <h2 className="h2 font-sans text-2xl font-normal m-0">
                                     Web Developer &amp; Software Developer
                                 </h2>
-                                {/* <div className="mt-10 ml-3 flex flex-col">
-                                    <Link
-                                        href=""
-                                        className="font-bold hover:tracking-widest transition-all text-stone-100 mt-3"
-                                    >
-                                        Projects
+                                <div className="landing-links">
+                                    <Link href="/projects">PROJECTS</Link>
+                                    <Link href="/creative">CREATIVE</Link>
+                                    <Link href="/knowledge">
+                                        KNOWLEDGE BASE
                                     </Link>
-                                    <Link
-                                        href=""
-                                        className="font-bold hover:tracking-widest transition-all text-stone-100 mt-3"
-                                    >
-                                        Writing
-                                    </Link>
-                                </div> */}
+                                </div>
                             </div>
                         </section>
-                        <div className="p-10 xw-1/4 border-t-2 xborder-l-2 border-stone-100 ml-auto">
-                            <p className="text-stone-100 w-1/4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Accusamus vero adipisci quas
-                                architecto deleniti. Voluptate, voluptatibus
-                                dolorum. Delectus omnis error, ipsam iste totam
-                                nihil et debitis qui soluta vitae nam!
-                            </p>
-                        </div>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
+                    </div>
+
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad officiis esse ducimus, quis dolore veritatis quod a
+                        nisi harum perferendis voluptatum optio eligendi, sunt
+                        velit nihil cumque eos distinctio fugit.
                     </div>
                 </div>
             </div>
