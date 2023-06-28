@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react"
 
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 const SidebarDecoration = () => {
     const [docHeight, setDocHeight] = useState<number>()
-    const [coords, setCoords] = useState()
+    const [coords, setCoords] = useState<string>()
 
     useEffect(() => {
-        // const dh = document.documentElement.scrollHeight
-        // console.log(dh)
-        // setDocHeight(dh)
         setDocHeight(window.innerHeight)
 
         const updateSize = () => {
@@ -18,32 +19,27 @@ const SidebarDecoration = () => {
 
         return () => window.removeEventListener("resize", updateSize)
     }, [])
-    // const docHeight = document.body .scrollHeight
-    // console.log(docHeight)
 
     useEffect(() => {
         const createCoords = () => {
-            const divide = 20
+            const divide = 15
             const squareSize = docHeight / divide
+
             // Create an array of coords h/20
             const arr = Array(divide)
                 .fill("")
                 .map((el, i) => {
-                    const n = Math.floor(i * squareSize)
+                    const step = i * squareSize
+                    const out = randomInt(1, 2)
                     console.log(squareSize)
-                    return `0|${n} 50|${n} ${squareSize}|${n} ${squareSize}|0 0|${n}`
+                    return `${squareSize * out}|${step} `
                 })
 
+            // Add the beginning and end coords
+            arr.unshift("0|0 ")
+            arr.push(`${squareSize}|${docHeight} 0|${docHeight}`)
+
             setCoords(arr.toString().replaceAll(",", " ").replaceAll("|", ","))
-
-            console.log(
-                arr.toString().replaceAll(",", " ").replaceAll("|", ",")
-            )
-
-            // TRY
-            // Make squares that go down the screen
-            // Randomly add squares to the right of some of te squares on the left
-            // Connect corners in polygon.
         }
 
         if (docHeight) {

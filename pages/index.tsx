@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                                     Samuel
                                     <span className="text-red-600">_</span>Beard
                                 </h1>
-                                <h2 className="h2 font-sans text-2xl font-normal m-0">
+                                <h2 className="h2 font-sans text-2xl font-normal m-0 mt-2">
                                     Web Developer &amp; Software Developer
                                 </h2>
                                 <div className="landing-links">
@@ -33,61 +33,9 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                         </section>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
-                    </div>
-
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad officiis esse ducimus, quis dolore veritatis quod a
-                        nisi harum perferendis voluptatum optio eligendi, sunt
-                        velit nihil cumque eos distinctio fugit.
+                        <div className="ml-auto m-2">
+                            Contact | Something | Other
+                        </div>
                     </div>
                 </div>
             </div>
