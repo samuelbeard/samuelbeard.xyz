@@ -31,7 +31,7 @@ const SidebarDecoration = () => {
                 .map((el, i) => {
                     const n = Math.floor(i * squareSize)
                     console.log(squareSize)
-                    return `0|${n} 50|${n} ${n}|${n} ${n}|0 0|${n}`
+                    return `0|${n} 50|${n} ${squareSize}|${n} ${squareSize}|0 0|${n}`
                 })
 
             setCoords(arr.toString().replaceAll(",", " ").replaceAll("|", ","))
