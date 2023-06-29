@@ -50,7 +50,7 @@ const SidebarDecoration = () => {
     return (
         <div className="h-screen fixed">
             {coords && (
-                <svg width="150" height="1000" className="">
+                <svg width="150" height={docHeight} className="">
                     <polygon
                         points={coords}
                         style={{ strokeWidth: 0 }}

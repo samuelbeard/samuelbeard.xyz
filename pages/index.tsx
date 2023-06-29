@@ -17,11 +17,16 @@ const Home: NextPage = () => {
                     <div className="pl-10 flex flex-col justify-between h-screen">
                         <section className="flex-grow flex flex-col justify-center">
                             <div className="xpl-10">
-                                <h1 className="h1 text-3xl sm:text-8xl m-0">
+                                {/* <h1 className="h1 text-3xl sm:text-8xl m-0">
                                     Samuel
                                     <span className="text-red-600">_</span>Beard
+                                </h1> */}
+                                <h1 className="glitch font-display text-slate-900">
+                                    {/* <span aria-hidden="true">Samuel_Beard</span> */}
+                                    Samuel_Beard
+                                    {/* <span aria-hidden="true">Samuel_Beard</span> */}
                                 </h1>
-                                <h2 className="h2 font-sans text-2xl font-normal m-0 mt-2">
+                                <h2 className="h2 font-sans text-2xl font-normal m-0 mt-0">
                                     Web Developer &amp; Software Developer
                                 </h2>
                                 <div className="landing-links">
