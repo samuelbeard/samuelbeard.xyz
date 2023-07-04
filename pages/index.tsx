@@ -13,7 +13,7 @@ const Home: NextPage = () => {
             <section className="section">
                 <div className="container lg:w-2/5 max-w-4xl">
                     <p className="para mb-0 text-slate-500 dark:text-slate-400">
-                        Hello. I'm
+                        Hello. I&apos;m
                     </p>
                     <h1 className="h1 text-3xl sm:text-5xl m-0 text-slate-600 dark:text-white">
                         Samuel Beard
