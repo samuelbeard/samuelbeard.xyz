@@ -32,8 +32,8 @@ jobs:
                   chmod 400 ~/.ssh/github-action
                   echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
 
-            - name: Deploy with rsync
-              uses: burnett01/rsync-deployments@6.0.0
+            - name: Rsync Deployments Action
+              uses: Burnett01/rsync-deployments@6.0.0
               with:
                   switches: -avzr --delete
                   path: ./
