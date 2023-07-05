@@ -33,7 +33,15 @@ jobs:
                   echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
 
             - name: Deploy with rsync
-              run: rsync -re . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
+              uses: burnette01/rsync-deployments@5.2.1
+              with:
+                  switches: -avzr --delete
+                  path: ./
+                  remote_path: /var/www/samuelbeard.xyz
+                  remote_host: ${{ secrets.HOST }}
+                  remote_user: ${{ secrets.USERNAME }}
+                  remote_key: ${{ secrets.SSH_KEY }}
+              # run: rsync -re . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
 
             # - name: Install SSH Key
             #   uses: shimataro/ssh-key-action@v2
