@@ -25,22 +25,23 @@ jobs:
             - name: Build Website
               run: npm run build
 
-            - name: Manage Keys
-              run: |
-                  mkdir ~/.ssh
-                  echo ${{ secrets.SSH_KEY }} >> ~/.ssh/github-action
-                  chmod 400 ~/.ssh/github-action
-                  echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
-
+            # - name: Manage Keys
+            #   run: |
+            #       mkdir ~/.ssh
+            #       echo ${{ secrets.SSH_KEY }} >> ~/.ssh/github-action
+            #       chmod 400 ~/.ssh/github-action
+            #       echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
             - name: Rsync Deployments Action
-              uses: Burnett01/rsync-deployments@6.0.0
+              uses: Pendect/action-rsyncer@v2.0.0
+              env:
+                  DEPLOY_KEY: ${{ secrets.SSH_KEY }}
               with:
-                  switches: -avzr --delete
-                  path: ./
-                  remote_path: /var/www/samuelbeard.xyz
-                  remote_host: ${{ secrets.HOST }}
-                  remote_user: ${{ secrets.USERNAME }}
-                  remote_key: ${{ secrets.SSH_KEY }}
+                  flags: -avzr --delete
+                  src: ./
+                  dest: "sbeard@samuelbeard.xyz:/var/www/samuelbeard.xyz"
+                  # remote_host: ${{ secrets.HOST }}
+                  # remote_user: ${{ secrets.USERNAME }}
+                  # remote_key: ${{ secrets.SSH_KEY }}
               # run: rsync -re . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
 
             # - name: Install SSH Key
