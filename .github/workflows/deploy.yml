@@ -26,10 +26,10 @@ jobs:
               run: npm run build
 
             - name: Manage Keys
-              - run: mkdir ~/.ssh
-              - run: echo ${{ secrets.SSH_KEY }} >> ~/.ssh/github-action
-              - run: chmod 400 ~/.ssh/github-action
-              - run: echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
+            - run: mkdir ~/.ssh
+            - run: echo ${{ secrets.SSH_KEY }} >> ~/.ssh/github-action
+            - run: chmod 400 ~/.ssh/github-action
+            - run: echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
 
             - name: Deploy with rsync
               run: rsync -re --delete ssh . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
