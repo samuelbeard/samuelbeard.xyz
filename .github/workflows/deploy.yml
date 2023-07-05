@@ -31,27 +31,28 @@ jobs:
             #       echo ${{ secrets.SSH_KEY }} >> ~/.ssh/github-action
             #       chmod 400 ~/.ssh/github-action
             #       echo -e "Host vps\n\tUser ${{ secrets.USERNAME }}\n\tHostname ${{ secrets.HOST }}\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
-            - name: Rsync Deployments Action
-              uses: Pendect/action-rsyncer@v2.0.0
-              env:
-                  DEPLOY_KEY: ${{ secrets.SSH_KEY }}
-              with:
-                  flags: -avzr --delete
-                  src: ./
-                  dest: "sbeard@samuelbeard.xyz:/var/www/samuelbeard.xyz"
-                  # remote_host: ${{ secrets.HOST }}
-                  # remote_user: ${{ secrets.USERNAME }}
-                  # remote_key: ${{ secrets.SSH_KEY }}
-              # run: rsync -re . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
-
-            # - name: Install SSH Key
-            #   uses: shimataro/ssh-key-action@v2
+            # - name: Rsync Deployments Action
+            #   uses: Pendect/action-rsyncer@v2.0.0
+            #   env:
+            #       DEPLOY_KEY: ${{ secrets.SSH_KEY }}
             #   with:
-            #       key: ${{ secrets.SSH_KEY }}
-            #       known_hosts: "unnecessary"
+            #       flags: -avzr --delete
+            #       src: ./
+            #       dest: "sbeard@samuelbeard.xyz:/var/www/samuelbeard.xyz"
+            # remote_host: ${{ secrets.HOST }}
+            # remote_user: ${{ secrets.USERNAME }}
+            # remote_key: ${{ secrets.SSH_KEY }}
+            # run: rsync -re . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
 
-            # - name: Adding Known Hosts
-            #   run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+            - name: Install SSH Key
+              uses: shimataro/ssh-key-action@v2
+              with:
+                  key: ${{ secrets.SSH_KEY }}
+                  name: id_rsa
+                  known_hosts: "unnecessary"
 
-            # - name: Deploy with rsync
-            #   run: rsync -avz --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
+            - name: Adding Known Hosts
+              run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+            - name: Deploy with rsync
+              run: rsync -avz --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
