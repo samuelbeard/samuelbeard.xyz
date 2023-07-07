@@ -6,12 +6,13 @@ module.exports = {
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: 'media',
+    darkMode: "media",
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+                sans: ["Exo", ...defaultTheme.fontFamily.sans],
                 serif: ["Newsreader", ...defaultTheme.fontFamily.serif],
+                display: ["Chakra Petch", ...defaultTheme.fontFamily.sans],
             },
         },
     },

@@ -6,12 +6,10 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Script
-                strategy="lazyOnload"
                 async
-                defer
-                data-website-id="9a6788da-cd88-4cb0-9855-835e8609d293"
                 src="https://umami.samuelbeard.xyz/script.js"
-            />
+                data-website-id="05096cc0-0f3a-4062-b748-bcae1992d3d9"
+            ></Script>
             <Head>
                 <title>Samuel Beard</title>
 
