@@ -48,7 +48,7 @@ const SidebarDecoration = () => {
     }, [docHeight])
 
     return (
-        <div className="h-screen fixed">
+        <div className="hidden sm:inline h-screen fixed">
             {coords && (
                 <svg width="150" height={docHeight} className="">
                     <polygon
