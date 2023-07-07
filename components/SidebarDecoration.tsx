@@ -54,7 +54,7 @@ const SidebarDecoration = () => {
                     <polygon
                         points={coords}
                         style={{ strokeWidth: 0 }}
-                        className="fill-gray-900"
+                        className="fill-black"
                     />
                 </svg>
             )}

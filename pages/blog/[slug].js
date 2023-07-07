@@ -6,27 +6,22 @@ import { format, parse } from "date-fns"
 
 const Post = ({ postData }) => {
     return (
-        <div className="page bg-slate-200 dark:bg-slate-800">
+        <div className="page">
             <Head>
                 <title>{postData.title}</title>
             </Head>
             <Header />
             <div className="section">
                 <div className="container">
-                    <h1 className="h1 mb-0 dark:text-slate-200">
-                        {postData.title}
-                    </h1>
-                    <h3 className="h3 font-normal mt-0 dark:text-slate-200">
+                    <h1 className="h1 mb-0">{postData.title}</h1>
+                    <h3 className="h3 text-lg font-normal mt-0 text-gray-500 font-sans">
                         {format(
                             parse(postData.date, "yyyy-MM-dd", new Date()),
                             "do MMMM yyyy"
                         )}
                     </h3>
                     {postData.tags.map(tag => (
-                        <span
-                            className="bg-slate-500 text-white px-2 py-0.5 rounded text-sm capitalize mx-1"
-                            key={tag}
-                        >
+                        <span className="badge" key={tag}>
                             {tag}
                         </span>
                     ))}

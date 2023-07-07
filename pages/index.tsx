@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                                         KNOWLEDGE BASE
                                     </Link>
                                 </div> */}
-                                {/* <Link href="/projects" className="mt-10 block">
+                                <Link href="/blog" className="mt-10 block">
                                     <svg
                                         width={300}
                                         height={100}
@@ -48,15 +48,15 @@ const Home: NextPage = () => {
                                             className="fill-black transition-all xstroke-2 stroke-gray-400 group-hover:stroke-black"
                                         />
                                         <text
-                                            x="80"
+                                            x="115"
                                             y="57"
                                             fill="white"
                                             className="text-3xl group-hover:fill-red-600 transition-all"
                                         >
-                                            PROJECTS
+                                            BLOG
                                         </text>
                                     </svg>
-                                </Link> */}
+                                </Link>
                                 {/* <Link
                                     href="/creative"
                                     className="ml-24 mt-10 block"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                                 </Link> */}
                                 <Link
                                     href="/music"
-                                    className="xml-48 mt-10 block"
+                                    className="ml-24 mt-10 block"
                                 >
                                     <svg
                                         width={300}
