@@ -6,6 +6,7 @@ import Link from "next/link"
 import SidebarDecoration from "../components/SidebarDecoration"
 import { RiCheckboxBlankCircleFill, RiFlashlightFill } from "react-icons/ri"
 import { Suspense } from "react"
+import HomeLink from "../components/HomeLink"
 
 const Home: NextPage = () => {
     return (
@@ -24,89 +25,9 @@ const Home: NextPage = () => {
                                     Samuel_Beard
                                     <span>Samuel Beard</span>
                                 </h1>
-                                <h2 className="h2 font-sans text-2xl font-normal m-0 mt-0">
-                                    Web&nbsp;Developer &amp;
-                                    Software&nbsp;Developer
-                                </h2>
-                                {/* <div className="landing-links">
-                                    <Link href="/projects">PROJECTS</Link>
-                                    <Link href="/creative">CREATIVE</Link>
-                                    <Link href="/knowledge">
-                                        KNOWLEDGE BASE
-                                    </Link>
-                                </div> */}
-                                <Link href="/blog" className="mt-10 block">
-                                    <svg
-                                        width={300}
-                                        height={100}
-                                        className="group hover:blur-none xdrop-shadow-md hover:drop-shadow-xl transition-all"
-                                    >
-                                        <polygon
-                                            shapeRendering="crispEdges"
-                                            vectorEffect="non-scaling-stroke"
-                                            points="0,0 260,0 300,40 300,100 200,100 190,90 100,90 90,100 40,100 0,60"
-                                            className="fill-black transition-all xstroke-2 stroke-gray-400 group-hover:stroke-black"
-                                        />
-                                        <text
-                                            x="115"
-                                            y="57"
-                                            fill="white"
-                                            className="text-3xl group-hover:fill-red-600 transition-all"
-                                        >
-                                            BLOG
-                                        </text>
-                                    </svg>
-                                </Link>
-                                {/* <Link
-                                    href="/creative"
-                                    className="ml-24 mt-10 block"
-                                >
-                                    <svg
-                                        width={300}
-                                        height={100}
-                                        className="group hover:blur-none xdrop-shadow-md hover:drop-shadow-xl transition-all"
-                                    >
-                                        <polygon
-                                            shapeRendering="crispEdges"
-                                            vectorEffect="non-scaling-stroke"
-                                            points="0,0 260,0 300,40 300,100 200,100 190,90 100,90 90,100 40,100 0,60"
-                                            className="fill-black transition-all xstroke-2 stroke-gray-400 group-hover:stroke-black"
-                                        />
-                                        <text
-                                            x="80"
-                                            y="57"
-                                            fill="white"
-                                            className="text-3xl group-hover:fill-red-600 transition-all"
-                                        >
-                                            CREATIVE
-                                        </text>
-                                    </svg>
-                                </Link> */}
-                                <Link
-                                    href="/music"
-                                    className="ml-24 mt-10 block"
-                                >
-                                    <svg
-                                        width={300}
-                                        height={100}
-                                        className="group hover:blur-none xdrop-shadow-md hover:drop-shadow-xl transition-all"
-                                    >
-                                        <polygon
-                                            shapeRendering="crispEdges"
-                                            vectorEffect="non-scaling-stroke"
-                                            points="0,0 260,0 300,40 300,100 200,100 190,90 100,90 90,100 40,100 0,60"
-                                            className="fill-black transition-all xstroke-2 stroke-gray-400 group-hover:stroke-black"
-                                        />
-                                        <text
-                                            x="110"
-                                            y="57"
-                                            fill="white"
-                                            className="text-3xl group-hover:fill-red-600 transition-all"
-                                        >
-                                            MUSIC
-                                        </text>
-                                    </svg>
-                                </Link>
+                                <h2 className="h2 font-sans text-2xl font-normal m-0 mt-0">Web&nbsp;Developer &amp; Software&nbsp;Developer</h2>
+                                <HomeLink href="/blog" title="BLOG" className="" textOffset={115} />
+                                <HomeLink href="/days" title="CREATIVE" className="ml-12" textOffset={85} />
                             </div>
                         </section>
                         {/* <div className="ml-auto m-2">
