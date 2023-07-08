@@ -14,6 +14,9 @@ module.exports = {
                 serif: ["Newsreader", ...defaultTheme.fontFamily.serif],
                 display: ["Chakra Petch", ...defaultTheme.fontFamily.sans],
             },
+            gridTemplateColumns: {
+                50: "repeat(50, minmax(0, 1fr))",
+            },
         },
     },
 }
