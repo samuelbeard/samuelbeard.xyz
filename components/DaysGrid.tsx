@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { LuBaby } from "react-icons/lu"
-import { FaBaby } from "react-icons/fa6"
+import { FaBaby, FaCode } from "react-icons/fa6"
 import { FaBirthdayCake } from "react-icons/fa"
 import { GiLinkedRings } from "react-icons/gi"
 import { TbParachute } from "react-icons/tb"
@@ -14,46 +14,17 @@ interface IDay {
 const birthDate = "1991-09-27"
 const significantDates = [
     { date: "1991-09-27", event: "The day I was born", icon: <FaBaby /> },
-    {
-        date: "1992-09-27",
-        event: "My first birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "1996-09-27",
-        event: "My fifth birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "2001-09-27",
-        event: "My tenth birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "2009-09-27",
-        event: "My eighteenth birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "2012-09-27",
-        event: "My twenty-first birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "2021-09-27",
-        event: "My thirtieth birthday",
-        icon: <FaBirthdayCake />,
-    },
-    {
-        date: "2022-05-28",
-        event: "Went skydiving",
-        icon: <TbParachute />,
-    },
-    {
-        date: "2013-03-22",
-        event: "I got married",
-        icon: <GiLinkedRings />,
-    },
+    { date: "1992-09-27", event: "My first birthday", icon: <FaBirthdayCake /> },
+    { date: "1996-09-27", event: "My fifth birthday", icon: <FaBirthdayCake /> },
+    { date: "2001-09-27", event: "My tenth birthday", icon: <FaBirthdayCake /> },
+    { date: "2009-09-27", event: "My eighteenth birthday", icon: <FaBirthdayCake /> },
+    { date: "2012-09-27", event: "My twenty-first birthday", icon: <FaBirthdayCake /> },
+    { date: "2021-09-27", event: "My thirtieth birthday", icon: <FaBirthdayCake /> },
+    { date: "2022-05-28", event: "Went skydiving", icon: <TbParachute /> },
+    { date: "2013-03-22", event: "I got married", icon: <GiLinkedRings /> },
+    { date: "2016-01-26", event: "Had my first kid", icon: <FaBaby /> },
+    { date: "2018-09-29", event: "Had my second kid", icon: <FaBaby /> },
+    { date: "2023-07-07", event: "Created this", icon: <FaCode /> },
 ]
 
 export default function DaysGrid() {
@@ -115,17 +86,12 @@ const Day = ({ day, i, total }: { day: IDay; i: number; total: number }) => {
     }
 
     return (
-        <div className="h-5 w-5 flex justify-center items-center" onClick={() => console.log(day?.event, i)}>
+        <div className="h-2 w-2 sm:h-5 sm:w-5 flex justify-center items-center" onClick={() => console.log(day?.event, i)}>
             {day ? (
-                <div
-                    className={`${!day.icon && "bg-gray-600"}  h-4 w-4 rounded-full text-gray-500`}
-                    // style={{ color: color() }}
-                >
-                    {day?.icon}
-                </div>
+                <div className={`${!day.icon && "bg-gray-600"} h-2 w-2 sm:h-4 sm:w-4 rounded-full text-gray-500 flex justify-center items-center`}>{day?.icon}</div>
             ) : (
                 <div
-                    className={`h-3 w-3 rounded-full `}
+                    className={`h-1 w-1 sm:h-3 sm:w-3 rounded-full `}
                     style={{
                         backgroundColor: color(),
                     }}

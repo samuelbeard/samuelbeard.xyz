@@ -27,7 +27,7 @@ const Home: NextPage = () => {
                                 </h1>
                                 <h2 className="h2 font-sans text-2xl font-normal m-0 mt-0">Web&nbsp;Developer &amp; Software&nbsp;Developer</h2>
                                 <HomeLink href="/blog" title="BLOG" className="" textOffset={115} />
-                                <HomeLink href="/days" title="CREATIVE" className="ml-12" textOffset={85} />
+                                <HomeLink href="/creative/days" title="CREATIVE" className="ml-12" textOffset={85} />
                             </div>
                         </section>
                         {/* <div className="ml-auto m-2">

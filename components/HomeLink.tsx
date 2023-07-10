@@ -9,14 +9,14 @@ const HomeLink = ({ href, title, className, textOffset }) => {
                         <stop
                             offset="0%"
                             style={{
-                                stopColor: "#dc2626",
+                                stopColor: "#0f172a",
                                 stopOpacity: 1,
                             }}
                         />
                         <stop
                             offset="100%"
                             style={{
-                                stopColor: "#93291e",
+                                stopColor: "#334155",
                                 stopOpacity: 1,
                             }}
                         />
