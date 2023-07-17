@@ -1,4 +1,5 @@
 ---
+published: true
 title: Setting Up a Raspberry Pi
 date: "2022-06-28"
 tags: ["raspberry pi", "linux"]

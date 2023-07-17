@@ -1,4 +1,5 @@
 ---
+published: true
 date: "2021-04-27"
 title: "My Go-To NPX Packages"
 tags: ['Coding', 'Web Development', 'Linux']

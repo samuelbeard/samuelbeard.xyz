@@ -13,7 +13,7 @@ I’m twenty seven. And since I was about sixteen, I have wanted to have my own 
 
 I learned a lot of things by having these businesses. Every one of them failed in some way or another. Some due to my lack of knowledge, some my lack of bravery and some were not very good ideas.
 
-![People fail forward to success](fail-sign.jpeg)
+![People fail forward to success](/img/blog/failed-businesses/fail.webp)
 
 Here are some of the bigger projects I have started over the years. How they failed and what I learned from them. My hope is that you can “pre-learn” these lessons so you don’t have to make the mistakes yourself.
 
@@ -38,7 +38,7 @@ This is the biggie. But there isn’t much to say about this one. If you are goi
 
 ## True Vine Creative Studios
 
-![True Vine Creative Studios Logo](tvcs.png)
+![True Vine Creative Studios Logo](/img/blog/failed-businesses/tvcs.webp)
 
 After about a year of learning web design, I decided to start a freelance business. I mentioned it to my friends and family and charged tiny amounts of money to make them average websites.
 
@@ -87,7 +87,7 @@ Do your research before you start an e-commerce business. Know how you will stic
 
 ## Strawberry Studios
 
-![](strawberry-studios.png)
+![](/img/blog/failed-businesses/strawberrystudios.webp)
 
 While I was freelancing as a web / graphic designer, my wife was doing the same as a photographer. And this business had potential. The lessons learned from my previous projects and the ones learnt here could have been applied here and got this thing going. But we had kids and that is what ultimately ended this business.
 

@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Cron Basics"
 date: "2017-02-20"
 tags: ["linux"]

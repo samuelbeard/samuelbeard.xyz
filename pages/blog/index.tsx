@@ -98,28 +98,52 @@ const Writing: NextPage<Props> = ({ posts }) => {
                     <div className="container grid grid-cols-2 gap-6">
                         {currentPosts?.length > 0 ? (
                             <>
-                                {currentPosts?.map(post => (
-                                    <Link className="col-span-2 rounded-lg p-3 flex xjustify-between xh-52 xcard xcard-hover xborder-b" href={`/blog/${post.slug}`} key={post.slug}>
-                                        <h2 className="">
-                                            <RiGitCommitFill className="text-xl inline mr-4 text-red-600 rotate-90 animate-pulse" />
-                                        </h2>
-                                        <div>
-                                            <h2 className="text-xl font-bold">{post.title}</h2>
-                                            <div>
-                                                <p className="text-sm p-2">{format(parse(post.date, "yyyy-MM-dd", new Date()), "do MMMM yyyy")}</p>
-                                                {post.tags.map(tag => (
-                                                    <button className="badge" key={tag}>
-                                                        {tag}
-                                                    </button>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </Link>
-                                ))}
+                                {currentPosts?.map(post => {
+                                    return (
+                                        post.published && (
+                                            <Link
+                                                className="col-span-2 rounded-lg p-3 flex xjustify-between xh-52 xcard xcard-hover xborder-b"
+                                                href={`/blog/${post.slug}`}
+                                                key={post.slug}
+                                            >
+                                                <h2 className="">
+                                                    <RiGitCommitFill className="text-xl inline mr-4 text-red-600 rotate-90 animate-pulse" />
+                                                </h2>
+                                                <div>
+                                                    <h2 className="text-xl font-bold">
+                                                        {post.title}
+                                                    </h2>
+                                                    <div>
+                                                        <p className="text-sm p-2">
+                                                            {format(
+                                                                parse(
+                                                                    post.date,
+                                                                    "yyyy-MM-dd",
+                                                                    new Date()
+                                                                ),
+                                                                "do MMMM yyyy"
+                                                            )}
+                                                        </p>
+                                                        {post.tags.map(tag => (
+                                                            <button
+                                                                className="badge"
+                                                                key={tag}
+                                                            >
+                                                                {tag}
+                                                            </button>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        )
+                                    )
+                                })}
                             </>
                         ) : (
                             <div className="col-span-2 flex justify-center items-center">
-                                <h1 className="text-2xl dark:text-slate-300 font-bold">NO POSTS HERE</h1>
+                                <h1 className="text-2xl dark:text-slate-300 font-bold">
+                                    NO POSTS HERE
+                                </h1>
                             </div>
                         )}
                     </div>
