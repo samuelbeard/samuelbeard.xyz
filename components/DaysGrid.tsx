@@ -14,12 +14,36 @@ interface IDay {
 const birthDate = "1991-09-27"
 const significantDates = [
     { date: "1991-09-27", event: "The day I was born", icon: <FaBaby /> },
-    { date: "1992-09-27", event: "My first birthday", icon: <FaBirthdayCake /> },
-    { date: "1996-09-27", event: "My fifth birthday", icon: <FaBirthdayCake /> },
-    { date: "2001-09-27", event: "My tenth birthday", icon: <FaBirthdayCake /> },
-    { date: "2009-09-27", event: "My eighteenth birthday", icon: <FaBirthdayCake /> },
-    { date: "2012-09-27", event: "My twenty-first birthday", icon: <FaBirthdayCake /> },
-    { date: "2021-09-27", event: "My thirtieth birthday", icon: <FaBirthdayCake /> },
+    {
+        date: "1992-09-27",
+        event: "My first birthday",
+        icon: <FaBirthdayCake />,
+    },
+    {
+        date: "1996-09-27",
+        event: "My fifth birthday",
+        icon: <FaBirthdayCake />,
+    },
+    {
+        date: "2001-09-27",
+        event: "My tenth birthday",
+        icon: <FaBirthdayCake />,
+    },
+    {
+        date: "2009-09-27",
+        event: "My eighteenth birthday",
+        icon: <FaBirthdayCake />,
+    },
+    {
+        date: "2012-09-27",
+        event: "My twenty-first birthday",
+        icon: <FaBirthdayCake />,
+    },
+    {
+        date: "2021-09-27",
+        event: "My thirtieth birthday",
+        icon: <FaBirthdayCake />,
+    },
     { date: "2022-05-28", event: "Went skydiving", icon: <TbParachute /> },
     { date: "2013-03-22", event: "I got married", icon: <GiLinkedRings /> },
     { date: "2016-01-26", event: "Had my first kid", icon: <FaBaby /> },
@@ -48,20 +72,27 @@ export default function DaysGrid() {
         const resultArray = new Array(daysSinceBirth + 1) // Create a new array with the length of days since birth
 
         for (let i = 0; i <= daysSinceBirth; i++) {
-            const currentDate = new Date(providedBirthDate.getTime() + i * oneDay) // Calculate the current date
+            const currentDate = new Date(
+                providedBirthDate.getTime() + i * oneDay
+            ) // Calculate the current date
 
             const matchingSignificantDate = significantDates.find(date => {
-                return new Date(date.date).toDateString() === currentDate.toDateString()
+                return (
+                    new Date(date.date).toDateString() ===
+                    currentDate.toDateString()
+                )
             })
 
-            resultArray[i] = matchingSignificantDate ? matchingSignificantDate : null
+            resultArray[i] = matchingSignificantDate
+                ? matchingSignificantDate
+                : null
         }
 
         return resultArray
     }
 
     return (
-        <div className="xcontainer xw-8/12 w-fit mx-auto grid grid-cols-50">
+        <div className="xcontainer xw-8/12 mx-auto grid w-fit grid-cols-50">
             {days?.map((el, i) => {
                 return <Day key={i} day={el} i={i} total={days.length} />
             })}
@@ -82,16 +113,29 @@ const Day = ({ day, i, total }: { day: IDay; i: number; total: number }) => {
     }
 
     const color = () => {
-        return `rgba(${convertRange(i, [0, total], [200, 100])}, ${convertRange(i, [0, total], [100, 200])}, 250, 0.5)`
+        return `rgba(${convertRange(i, [0, total], [200, 100])}, ${convertRange(
+            i,
+            [0, total],
+            [100, 200]
+        )}, 250, 0.5)`
     }
 
     return (
-        <div className="h-2 w-2 sm:h-5 sm:w-5 flex justify-center items-center" onClick={() => console.log(day?.event, i)}>
+        <div
+            className="flex h-2 w-2 items-center justify-center sm:h-5 sm:w-5"
+            onClick={() => console.log(day?.event, i)}
+        >
             {day ? (
-                <div className={`${!day.icon && "bg-gray-600"} h-2 w-2 sm:h-4 sm:w-4 rounded-full text-gray-500 flex justify-center items-center`}>{day?.icon}</div>
+                <div
+                    className={`${
+                        !day.icon && "bg-gray-600"
+                    } flex h-2 w-2 items-center justify-center rounded-full text-gray-500 sm:h-4 sm:w-4`}
+                >
+                    {day?.icon}
+                </div>
             ) : (
                 <div
-                    className={`h-1 w-1 sm:h-3 sm:w-3 rounded-full `}
+                    className={`h-1 w-1 rounded-full sm:h-3 sm:w-3 `}
                     style={{
                         backgroundColor: color(),
                     }}

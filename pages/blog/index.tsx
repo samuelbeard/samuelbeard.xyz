@@ -57,42 +57,6 @@ const Writing: NextPage<Props> = ({ posts }) => {
                 </Head>
                 <div>
                     <Header />
-                    {/* <section className="section mt-6">
-                    <div className="container">
-                        <div className="flex">
-                            <input
-                                className="bg-slate-400 px-3 py-1 rounded-l w-2/12 text-center font-bold outline-none focus:outline-none"
-                                value="Filter"
-                                readOnly
-                            />
-                            <input
-                                type="text"
-                                className="bg-slate-300 px-3 py-1 xrounded-r w-9/12 outline-none focus:outline-none"
-                                value={filter}
-                                onChange={e => setFilter(e.target.value)}
-                                autoFocus
-                            />
-                            <button
-                                onClick={() => setFilter("")}
-                                className="bg-slate-400 px-3 py-1 rounded-r w-1/12 flex justify-center font-bold outline-none focus:outline-none hover:bg-slate-500"
-                            >
-                                <RiCloseLine className="w-6 h-6" />
-                            </button>
-                        </div>
-                    </div>
-                </section> */}
-                    {/* <section className="section">
-                    <div className="container text-center">
-                        {filters.map(f => (
-                            <FilterButton
-                                key={f}
-                                label={f}
-                                filter={filter}
-                                setFilter={setFilter}
-                            />
-                        ))}
-                    </div>
-                </section> */}
                 </div>
                 <section className="section mt-10">
                     <div className="container grid grid-cols-2 gap-6">
@@ -102,19 +66,19 @@ const Writing: NextPage<Props> = ({ posts }) => {
                                     return (
                                         post.published && (
                                             <Link
-                                                className="col-span-2 rounded-lg p-3 flex xjustify-between xh-52 xcard xcard-hover xborder-b"
+                                                className="xjustify-between xh-52 xcard xcard-hover xborder-b col-span-2 flex rounded-lg p-3"
                                                 href={`/blog/${post.slug}`}
                                                 key={post.slug}
                                             >
                                                 <h2 className="">
-                                                    <RiGitCommitFill className="text-xl inline mr-4 text-red-600 rotate-90 animate-pulse" />
+                                                    <RiGitCommitFill className="mr-4 inline rotate-90 animate-pulse text-xl text-red-600" />
                                                 </h2>
                                                 <div>
                                                     <h2 className="text-xl font-bold">
                                                         {post.title}
                                                     </h2>
                                                     <div>
-                                                        <p className="text-sm p-2">
+                                                        <p className="p-2 text-sm">
                                                             {format(
                                                                 parse(
                                                                     post.date,
@@ -140,8 +104,8 @@ const Writing: NextPage<Props> = ({ posts }) => {
                                 })}
                             </>
                         ) : (
-                            <div className="col-span-2 flex justify-center items-center">
-                                <h1 className="text-2xl dark:text-slate-300 font-bold">
+                            <div className="col-span-2 flex items-center justify-center">
+                                <h1 className="text-2xl font-bold dark:text-slate-300">
                                     NO POSTS HERE
                                 </h1>
                             </div>

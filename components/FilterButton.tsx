@@ -10,7 +10,7 @@ const FilterButton: FC<Props> = ({ label, filter, setFilter }) => {
     return (
         <button
             onClick={() => setFilter(label)}
-            className="bg-slate-300 px-3 py-1 m-2 rounded text-center font-bold outline-none focus:outline-none hover:bg-slate-400"
+            className="m-2 rounded bg-slate-300 px-3 py-1 text-center font-bold outline-none hover:bg-slate-400 focus:outline-none"
         >
             {label}
         </button>

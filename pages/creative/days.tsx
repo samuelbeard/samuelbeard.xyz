@@ -14,7 +14,10 @@ export default function DaysPage() {
                 <h1 className="h1">
                     Every day of my life <span className="h4">so far</span>
                 </h1>
-                <p>Every dot in the grid below represents a day of my life so far. And each icon is a significant day.</p>
+                <p>
+                    Every dot in the grid below represents a day of my life so
+                    far. And each icon is a significant day.
+                </p>
             </div>
             <DaysGrid />
             <Footer className="pt-24" />

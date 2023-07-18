@@ -16,9 +16,9 @@ const Music: NextPage = () => {
                     {music?.map((post: { title: string; youtube: string }) => (
                         <div
                             key={post.title}
-                            className="card rounded-lg text-center p-4 flex flex-col justify-between"
+                            className="card flex flex-col justify-between rounded-lg p-4 text-center"
                         >
-                            <h2 className="text-xl font-bold mb-3 dark:text-slate-300">
+                            <h2 className="mb-3 text-xl font-bold dark:text-slate-300">
                                 {post.title}
                             </h2>
                             {post.youtube && (
