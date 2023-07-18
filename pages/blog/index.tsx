@@ -26,27 +26,6 @@ interface Post {
 
 const Writing: NextPage<Props> = ({ posts }) => {
     const [currentPosts, setCurrentPosts] = useState<Post[]>(posts)
-    const [filter, setFilter] = useState("")
-
-    useEffect(() => {
-        if (filter === "all" || filter === "") {
-            setCurrentPosts(posts)
-        } else {
-            let x = posts.map(post => {
-                let allTags: string = ""
-
-                post.tags.map(tag => {
-                    allTags += tag.replace(" ", "").toLowerCase()
-                })
-
-                if (allTags.includes(filter.toLowerCase())) {
-                    return post
-                }
-            })
-
-            setCurrentPosts(x.filter(Boolean))
-        }
-    }, [filter, posts])
 
     return (
         <>
