@@ -3,38 +3,27 @@ import Link from "next/link"
 
 const Header: FC = () => {
     return (
-        <>
-            <header className="max-w-screen flex overflow-hidden bg-gradient-to-r from-black via-gray-800 to-black">
-                <div className="container mx-auto">
-                    <div className="xmax-w-full xw-1/2 mx-auto flex flex-grow items-center  justify-between">
-                        <div className="text-white">
-                            <Link
-                                className="xhover:blur-sm rounded transition-all hover:scale-x-50"
-                                href="/"
-                            >
-                                <h1 className="glitch transition-all hover:tracking-wide">
-                                    Samuel Beard
-                                </h1>
-                            </Link>
-                        </div>
-                        <div className="flex rounded-sm p-1">
-                            <Link
-                                className="mx-1 my-1 p-1 text-white transition-all hover:animate-pulse"
-                                href="/creative/days"
-                            >
-                                CREATIVE
-                            </Link>
-                            <Link
-                                className="mx-1 my-1 p-1 text-white transition-all hover:animate-pulse"
-                                href="/blog"
-                            >
-                                BLOG
-                            </Link>
-                        </div>
-                    </div>
+        <header className="h-14x flex h-20 items-center p-3 text-zinc-900">
+            <div className="flex h-full w-full items-center justify-between rounded-xl bg-brand-blue px-4 sm:justify-center sm:px-7">
+                <Link href="/">
+                    <h1 className="font-bold sm:mx-5">Samuel&nbsp;Beard</h1>
+                </Link>
+                <div>
+                    <Link
+                        href="/blog"
+                        className="mx-1 hover:underline hover:opacity-50 sm:mx-2"
+                    >
+                        Blog
+                    </Link>
+                    <Link
+                        href="/creative/days"
+                        className="mx-1 hover:underline hover:opacity-50 sm:mx-2"
+                    >
+                        Creative
+                    </Link>
                 </div>
-            </header>
-        </>
+            </div>
+        </header>
     )
 }
 

@@ -50,7 +50,6 @@ const Writing: NextPage<Props> = ({ posts }) => {
 
     return (
         <>
-            <SidebarDecoration />
             <div className="page">
                 <Head>
                     <title>Blog | Samuel Beard</title>
@@ -71,7 +70,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                                                 key={post.slug}
                                             >
                                                 <h2 className="">
-                                                    <RiGitCommitFill className="mr-4 inline rotate-90 animate-pulse text-xl text-red-600" />
+                                                    <RiGitCommitFill className="mr-4 inline rotate-90 animate-pulse text-xl text-brand-orange" />
                                                 </h2>
                                                 <div>
                                                     <h2 className="text-xl font-bold">

@@ -7,7 +7,7 @@ interface Props {
 const Footer: FC<Props> = ({ className }) => {
     return (
         <footer
-            className={`mb-3 mt-6 text-center text-slate-500 dark:text-slate-400 ${className}`}
+            className={`mt-6 bg-zinc-900 pb-3 text-center text-zinc-400 ${className}`}
         >
             <p className="text-sm">
                 &copy; {new Date().getFullYear()} Samuel Beard

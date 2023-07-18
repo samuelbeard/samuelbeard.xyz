@@ -14,6 +14,22 @@ function MyApp({ Component, pageProps }) {
                 <title>Samuel Beard</title>
 
                 <meta name="apple-mobile-web-app-capable" content="yes" />
+
+                <meta property="og:url" content="https://samuelbeard.xyz" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Samuel Beard" />
+                <meta property="og:description" content="undefined" />
+                <meta property="og:image" content="" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="samuelbeard.xyz" />
+                <meta
+                    property="twitter:url"
+                    content="https://samuelbeard.xyz"
+                />
+                <meta name="twitter:title" content="Samuel Beard" />
+                <meta name="twitter:description" content="undefined" />
+                <meta name="twitter:image" content="" />
             </Head>
             <Component {...pageProps} />
         </>

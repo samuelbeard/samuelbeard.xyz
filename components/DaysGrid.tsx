@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { LuBaby } from "react-icons/lu"
-import { FaBaby, FaCode } from "react-icons/fa6"
+import { FaBaby, FaCode, FaSpinner } from "react-icons/fa6"
 import { FaBirthdayCake } from "react-icons/fa"
 import { GiLinkedRings } from "react-icons/gi"
 import { TbParachute } from "react-icons/tb"
+import { RiAB } from "react-icons/ri"
 
 interface IDay {
     date: string
@@ -93,31 +93,34 @@ export default function DaysGrid() {
 
     return (
         <div className="xcontainer xw-8/12 mx-auto grid w-fit grid-cols-50">
-            {days?.map((el, i) => {
-                return <Day key={i} day={el} i={i} total={days.length} />
-            })}
+            {days ? (
+                <>
+                    {days?.map((el, i) => {
+                        return (
+                            <Day key={i} day={el} i={i} total={days.length} />
+                        )
+                    })}
+                </>
+            ) : (
+                <div className="center w-screen">
+                    <FaSpinner className="animate-spin text-8xl text-white" />
+                </div>
+            )}
         </div>
     )
 }
 
 const Day = ({ day, i, total }: { day: IDay; i: number; total: number }) => {
-    const bgColour = () => {
-        if (i > 7847) return "bg-gray-300"
-        if (i > 6575) return "bg-gray-200"
-
-        return "bg-gray-100"
-    }
-
     function convertRange(value, r1, r2) {
         return ((value - r1[0]) * (r2[1] - r2[0])) / (r1[1] - r1[0]) + r2[0]
     }
 
     const color = () => {
-        return `rgba(${convertRange(i, [0, total], [200, 100])}, ${convertRange(
+        return `rgba(${convertRange(i, [0, total], [150, 100])}, ${convertRange(
             i,
             [0, total],
-            [100, 200]
-        )}, 250, 0.5)`
+            [100, 150]
+        )}, 200, 0.5)`
     }
 
     return (
@@ -128,8 +131,8 @@ const Day = ({ day, i, total }: { day: IDay; i: number; total: number }) => {
             {day ? (
                 <div
                     className={`${
-                        !day.icon && "bg-gray-600"
-                    } flex h-2 w-2 items-center justify-center rounded-full text-gray-500 sm:h-4 sm:w-4`}
+                        !day.icon && "bg-gray-300"
+                    } flex h-2 w-2 items-center justify-center rounded-full text-gray-50 sm:h-4 sm:w-4`}
                 >
                     {day?.icon}
                 </div>

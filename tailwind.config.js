@@ -10,12 +10,19 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Exo", ...defaultTheme.fontFamily.sans],
+                sans: ["Poppins", ...defaultTheme.fontFamily.sans],
                 serif: ["Newsreader", ...defaultTheme.fontFamily.serif],
-                display: ["Chakra Petch", ...defaultTheme.fontFamily.sans],
+                display: ["Poppins", ...defaultTheme.fontFamily.sans],
             },
             gridTemplateColumns: {
                 50: "repeat(50, minmax(0, 1fr))",
+            },
+            colors: {
+                "brand-red": "#d11141",
+                "brand-green": "#00b159",
+                "brand-blue": "#00aedb",
+                "brand-orange": "#f37735",
+                "brand-yellow": "#ffc425",
             },
         },
     },

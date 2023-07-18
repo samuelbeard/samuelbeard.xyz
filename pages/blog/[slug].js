@@ -14,7 +14,7 @@ const Post = ({ postData }) => {
             <div className="section">
                 <div className="container">
                     <h1 className="h1 mb-0">{postData.title}</h1>
-                    <h3 className="h3 text-lg font-normal mt-0 text-gray-500 font-sans">
+                    <h3 className="h3 mt-0 font-sans text-lg font-normal text-zinc-200">
                         {format(
                             parse(postData.date, "yyyy-MM-dd", new Date()),
                             "do MMMM yyyy"
@@ -28,7 +28,7 @@ const Post = ({ postData }) => {
                 </div>
             </div>
             <div className="section mt-8">
-                <div className="container">
+                <div className="container px-2">
                     <div
                         dangerouslySetInnerHTML={{
                             __html: postData.contentHtml,

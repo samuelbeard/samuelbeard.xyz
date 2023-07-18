@@ -3,55 +3,67 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import { NextPage } from "next"
 import Link from "next/link"
-import SidebarDecoration from "../components/SidebarDecoration"
-import { RiCheckboxBlankCircleFill, RiFlashlightFill } from "react-icons/ri"
-import { Suspense } from "react"
-import HomeLink from "../components/HomeLink"
 
 const Home: NextPage = () => {
     return (
         <>
             <Head>
                 <title>Samuel Beard</title>
+                <meta name="description" content="Web and Software Developer" />
             </Head>
-            <SidebarDecoration />
-            <div className="min-h-screen sm:pl-[150px]">
-                <div className="px-2 sm:px-5">
-                    <div className="flex h-screen flex-col justify-between sm:pl-10">
-                        <section className="flex flex-grow flex-col justify-center">
-                            <div className="xpl-10">
-                                <h1 className="glitch font-display text-3xl text-slate-900 sm:text-5xl lg:text-8xl">
-                                    <span>Samuel Beard</span>
-                                    Samuel_Beard
-                                    <span>Samuel Beard</span>
+            <div className="min-h-screen bg-zinc-900">
+                <Header />
+                <div className="flex h-[90vh] flex-col">
+                    <div className="h-1/2 w-full px-3">
+                        <div className="flex h-full items-center rounded-xl bg-brand-yellow p-10">
+                            <div>
+                                <h1 className="text-3xl font-bold text-zinc-900 sm:text-8xl">
+                                    Samuel Beard
                                 </h1>
-                                <h2 className="h2 m-0 mt-0 font-sans text-2xl font-normal">
-                                    Web&nbsp;Developer &amp;
-                                    Software&nbsp;Developer
-                                </h2>
-                                <HomeLink
-                                    href="/blog"
-                                    title="BLOG"
-                                    className=""
-                                    textOffset={115}
-                                />
-                                <HomeLink
-                                    href="/creative/days"
-                                    title="CREATIVE"
-                                    className="ml-12"
-                                    textOffset={85}
-                                />
+                                <h3 className="text-sm sm:text-3xl">
+                                    Web and Software Developer
+                                </h3>
                             </div>
-                        </section>
-                        {/* <div className="ml-auto m-2">
-                            Contact{" "}
-                            <RiFlashlightFill className="inline text-xs" />{" "}
-                            Something{" "}
-                            <RiFlashlightFill className="inline text-xs" />{" "}
-                            Other
-                        </div> */}
+                        </div>
+                    </div>
+                    <div className="flex w-full flex-col justify-around md:h-1/2 md:flex-row">
+                        <div className="w-full pt-3 pl-3 pr-3 md:h-full md:w-1/3 md:py-3 md:pr-0">
+                            <Link
+                                href="/blog"
+                                className="flex h-full items-center justify-center rounded-xl bg-brand-red p-7 transition-all hover:bg-zinc-900"
+                            >
+                                <h2 className="h2 text-4xl text-white">Blog</h2>
+                            </Link>
+                        </div>
+                        <div className="w-full p-3 md:w-1/3">
+                            <Link
+                                href="/creative/days"
+                                className="group relative flex h-full flex-col items-center justify-center rounded-xl bg-brand-green p-7 transition-all hover:bg-zinc-900"
+                            >
+                                <h2 className="h2 mb-0 text-4xl text-white">
+                                    Creative
+                                </h2>
+                                <h3 className="mt-0 font-bold text-white">
+                                    Every Day of my Life
+                                </h3>
+                                <h4 className="absolute left-3 top-3 rounded-lg bg-zinc-900 px-2 py-1 text-xs text-white transition-all group-hover:bg-white group-hover:text-zinc-900">
+                                    Featured
+                                </h4>
+                            </Link>
+                        </div>
+                        <div className="h-full w-full pr-3 pl-3 md:w-1/3 md:py-3 md:pl-0">
+                            <Link
+                                href="/"
+                                className="relative flex h-full flex-col items-center justify-center rounded-xl bg-brand-orange p-7 transition-all hover:bg-zinc-900"
+                            >
+                                <h2 className="h2 text-4xl text-white">
+                                    Something
+                                </h2>
+                            </Link>
+                        </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     )
