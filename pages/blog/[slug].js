@@ -14,7 +14,7 @@ const Post = ({ postData }) => {
             <div className="section">
                 <div className="container">
                     <h1 className="h1 mb-0">{postData.title}</h1>
-                    <h3 className="h3 mt-0 font-sans text-lg font-normal text-zinc-200">
+                    <h3 className="h3 mt-0 font-sans text-lg font-normal text-white">
                         {format(
                             parse(postData.date, "yyyy-MM-dd", new Date()),
                             "do MMMM yyyy"
