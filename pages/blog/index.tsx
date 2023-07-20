@@ -50,7 +50,7 @@ const Writing: NextPage<Props> = ({ posts }) => {
                                                 }}
                                             >
                                                 <h2 className="">
-                                                    <RiGitCommitFill className="mr-4 inline rotate-90 animate-pulse text-xl text-brand-yellow" />
+                                                    <RiGitCommitFill className="mr-4 inline rotate-90 animate-pulse text-xl text-yellow" />
                                                 </h2>
                                                 <div>
                                                     <h2 className="text-xl font-bold">

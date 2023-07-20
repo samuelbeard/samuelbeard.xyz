@@ -18,14 +18,25 @@ module.exports = {
                 50: "repeat(50, minmax(0, 1fr))",
             },
             colors: {
-                "brand-red": "#e0285c",
-                "brand-green": "#465e44",
-                // "brand-blue": "#00aedb",
-                // "brand-orange": "#f37735",
-                "brand-yellow": "#ffa12b",
-                "brand-dark-blue": "#282a3f",
-                "brand-white": "#fcfefb",
-                "brand-black": "#1e1e1e",
+                // Red
+                red: "#e0285c",
+                // Pink
+                pink: "#e5265c",
+                "light-pink": "#e7708d",
+                "pale-pink": "#ffeaf1",
+                // Green
+                green: "#465e44",
+                "light-green": "#71c39b",
+                "pale-green": "#e7f7ed",
+                // Yellow
+                yellow: "#ffa12b",
+                "light-yellow": "#fdc218",
+                "pale-yellow": "#fefaef",
+                // Blue
+                "dark-blue": "#282a3f",
+                // Black / White
+                white: "#fcfefb",
+                black: "#1e1e1e",
             },
             boxShadow: {
                 solid: "3px 3px 0 0 white",

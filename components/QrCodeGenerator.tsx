@@ -25,7 +25,7 @@ export default function QrCodeGenerator() {
 
     return (
         <div className="flex flex-col items-center justify-center md:flex-row">
-            <div className="mx-10 flex max-w-2xl flex-col rounded-xl bg-brand-yellow p-5 text-brand-black md:w-1/2">
+            <div className="mx-10 flex max-w-2xl flex-col rounded-xl bg-yellow p-5 text-black md:w-1/2">
                 <label htmlFor="value">QR Code Value</label>
                 <input
                     placeholder={value}

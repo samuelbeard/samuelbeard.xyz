@@ -4,7 +4,7 @@ import Link from "next/link"
 const Header: FC = () => {
     return (
         <header className="h-14x flex h-20 items-center p-3 text-zinc-900">
-            <div className="flex h-full w-full items-center justify-between rounded-xl bg-brand-white px-4 sm:justify-center sm:px-7">
+            <div className="flex h-full w-full items-center justify-between rounded-xl bg-white px-4 sm:justify-center sm:px-7">
                 <Link href="/">
                     <h1 className="font-bold sm:mx-5">Samuel&nbsp;Beard</h1>
                 </Link>
