@@ -20,6 +20,9 @@ export default function CreativePage() {
                 <Link href="/creative/qrcode" className="creative-link">
                     QR Generator
                 </Link>
+                <Link href="/creative/html-entities" className="creative-link">
+                    Character Entities
+                </Link>
             </div>
             <Footer className="pt-24" />
         </div>

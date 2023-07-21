@@ -41,6 +41,15 @@ module.exports = {
             boxShadow: {
                 solid: "3px 3px 0 0 white",
             },
+            keyframes: {
+                wiggle: {
+                    "0%, 100%": { transform: "rotate(-3deg)" },
+                    "50%": { transform: "rotate(3deg)" },
+                },
+            },
+            animation: {
+                wiggle: "wiggle 200ms ease-in-out",
+            },
         },
     },
 }
