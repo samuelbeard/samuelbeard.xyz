@@ -40,7 +40,10 @@ export default function DaysPage() {
             <div className="mx-auto grid w-full max-w-6xl grid-cols-6 gap-5">
                 {entities.map(el => {
                     return (
-                        <div className="center col-span-1 h-56 w-full flex-col rounded-xl bg-green p-1">
+                        <div
+                            key={el[0]}
+                            className="center col-span-1 h-56 w-full flex-col rounded-xl bg-green p-1"
+                        >
                             <h3
                                 className="h3 mx-0 my-3 text-5xl"
                                 dangerouslySetInnerHTML={{
@@ -48,7 +51,7 @@ export default function DaysPage() {
                                 }}
                             />
                             {el.map(code => (
-                                <Code code={code} />
+                                <Code key={code} code={code} />
                             ))}
                         </div>
                     )
