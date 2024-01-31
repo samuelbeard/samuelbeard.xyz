@@ -132,7 +132,7 @@ const Day = ({ day, i, total }: { day: IDay; i: number; total: number }) => {
                 <div
                     className={`${
                         !day.icon && "bg-gray-300"
-                    } flex h-2 w-2 items-center justify-center rounded-full text-gray-50 sm:h-4 sm:w-4`}
+                    } flex h-2 w-2 items-center justify-center rounded-full text-gray-50 transition-all hover:scale-150 sm:h-4 sm:w-4`}
                 >
                     {day?.icon}
                 </div>

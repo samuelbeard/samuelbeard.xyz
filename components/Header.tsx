@@ -1,5 +1,6 @@
 import { FC } from "react"
 import Link from "next/link"
+import { GiHolyHandGrenade } from "react-icons/gi"
 
 const Header: FC = () => {
     return (
@@ -8,6 +9,7 @@ const Header: FC = () => {
                 <Link href="/">
                     <h1 className="font-bold sm:mx-5">Samuel&nbsp;Beard</h1>
                 </Link>
+                <GiHolyHandGrenade className="mr-2" />
                 <div>
                     <Link
                         href="/blog"

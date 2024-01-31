@@ -30,7 +30,7 @@ const Home: NextPage = () => {
                         <div className="w-full pt-3 pl-3 pr-3 md:h-full md:w-1/3 md:py-3 md:pr-0">
                             <Link
                                 href="/blog"
-                                className="animate-in flex h-full items-center justify-center rounded-xl bg-green p-7 transition-all hover:bg-zinc-900"
+                                className="animate-in flex h-full items-center justify-center rounded-xl bg-green p-7 transition-all hover:bg-opacity-80"
                                 style={{ animationDelay: "0.5s" }}
                             >
                                 <h2 className="h2 text-4xl text-white">Blog</h2>
@@ -39,13 +39,13 @@ const Home: NextPage = () => {
                         <div className="w-full p-3 md:w-1/3">
                             <Link
                                 href="/creative/days"
-                                className="animate-in group relative flex h-full flex-col items-center justify-center rounded-xl bg-white p-7 text-black transition-all hover:bg-zinc-900"
+                                className="animate-in relative flex h-full flex-col items-center justify-center rounded-xl bg-white p-7 text-black transition-all hover:bg-opacity-80"
                                 style={{ animationDelay: "1s" }}
                             >
-                                <h2 className="h2 mb-0 text-4xl text-zinc-900 transition-all group-hover:text-zinc-200">
+                                <h2 className="h2 mb-0 text-4xl text-zinc-900">
                                     Creative
                                 </h2>
-                                <h3 className="mt-0 font-bold text-zinc-900 transition-all group-hover:text-zinc-200">
+                                <h3 className="mt-0 font-bold text-zinc-900">
                                     Every Day of my Life
                                 </h3>
                                 <h4 className="absolute left-3 top-3 rounded-lg bg-zinc-900 px-2 py-1 text-xs text-white transition-all group-hover:bg-white group-hover:text-zinc-900">
@@ -56,10 +56,10 @@ const Home: NextPage = () => {
                         <div className="h-full w-full pr-3 pl-3 md:w-1/3 md:py-3 md:pl-0">
                             <Link
                                 href="/creative/qrcode"
-                                className="animate-in group relative flex h-full flex-col items-center justify-center rounded-xl bg-yellow p-7 transition-all hover:bg-zinc-900"
+                                className="animate-in relative flex h-full flex-col items-center justify-center rounded-xl bg-yellow p-7 transition-all hover:bg-opacity-80"
                                 style={{ animationDelay: "1.5s" }}
                             >
-                                <h2 className="h2 text-4xl text-zinc-900 transition-all group-hover:text-zinc-200">
+                                <h2 className="h2 text-4xl text-zinc-900">
                                     QR Generator
                                 </h2>
                             </Link>
