@@ -5,21 +5,29 @@ title: "Websites for Non Web Developers - Part 1 - Domain Names"
 tags: ['Coding', 'Web Development']
 ---
 
-Depending on how savvy you are with the world of web development, there are two distinct sides of the internet for individuals or small companies. The extremely cheap but technical, and the easy and expensive.
-
-In this series of posts, I aim going to demistify HOW major parts of the internet work so you can make better, cheaper decisions and not have to rely on expensive services to manage it for you.
+The internet offers a double-edged sword for individuals and small businesses: affordability at the cost of technical expertise, or user-friendliness at a premium. This series aims to demystify the inner workings of key internet components, empowering you to make informed and cost-effective decisions, ultimately reducing reliance on expensive management services.
 
 # Domain Names
-In this part, we will go through what a domain name is, what it is *not* and how to use it effectively. 
+In this section, we'll dive into the world of domain names: what they are, what they *aren't*, and how to use them to your advantage.
 
-A domain name is one of the most important parts of your web presence (maybe even your business). Once you have found and bought one, make sure you do not let it expire. If you do, it could be bought up by someone else and you'd loose complete control of it. Even if you have freelancers building and deploying your website, I would still recommend that you buy and keep hold of your domain name.
+Think of your domain name as the address of your online home. It's one of the cornerstones of your web presence, and potentially your business too. Once you've found and secured your ideal domain, holding onto it is crucial. Letting it expire could mean someone else snatching it up, leaving you without control. Even if you're working with freelancers, owning your domain is a wise move.
 
-A domain name is not actually attached to your website or anything else that you have online. It is simply a human readable pointer to wherever your website may be hosted.
+A domain name doesn't actually stick to your website or other online elements. It's more like a human-friendly signpost pointing visitors in the right direction, regardless of where your website is hosted.
 
 ## What is a domain name?
+### Top-Level Domain (TLD)
+This is the final part of your domain name, like `.com`, `.org`, or `.net`. There are also country-specific TLDs like `.co.uk` or `.ca`. The TLD is the most general part of the domain name, and it's the part that most people remember. For example, in `google.com`, the TLD is `.com`.
+
+There are thousands of TLDs available, and new ones being created all the time. (Here)[https://data.iana.org/TLD/tlds-alpha-by-domain.txt] is a list of all the TLDs that are currently available. Some more unusual TLDs include `.ninja`, `.guru`, and `.pizza`.
+
+> You could pick mybusiness.ninja and and be happy with it. It is worth mentioning, however, that `.com` is the most popular TLD and the one that people are most likely to type into their browser. If you're buying a domain, I recommend trying to get the `.com` version of your domain if it's available also. Even if you are going to use the `.ninja` domain for your main site, you should still get the `.com` version and redirect it to your main site.
+
+### Second-Level Domain (SLD)
+This is the part of the domain name that is specific to you. For example, in `google.com`, the second-level domain is `google`. It's the part of the domain name that you have the most control over.
+
 ### Subdomains
 ### Second level domain
-### TLDs (Top Level Domains)
+
 ### Subdirectories and Routes
 ### HTTP and HTTPS
 The `http://` or `https://` that goes before your domain name in a brower isn't technically part of the domain name itself. It refers to the protocol used to access your website.
