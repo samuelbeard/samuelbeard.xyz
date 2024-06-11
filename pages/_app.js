@@ -10,6 +10,11 @@ function MyApp({ Component, pageProps }) {
                 src="https://umami.samuelbeard.xyz/script.js"
                 data-website-id="05096cc0-0f3a-4062-b748-bcae1992d3d9"
             ></Script>
+            <Script
+                defer
+                src="https://static.cloudflareinsights.com/beacon.min.js"
+                data-cf-beacon='{"token": "5189cc4f26d945c682a921ecdca2fa27"}'
+            ></Script>
             <Head>
                 <title>Samuel Beard</title>
 
