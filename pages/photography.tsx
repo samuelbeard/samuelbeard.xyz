@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import Head from "next/head"
 import photos from "../content/photography.json"
 import Image from "next/image"
+import Photo from "../components/Photo"
 
 const Photography: NextPage = () => {
     return (
@@ -13,24 +14,17 @@ const Photography: NextPage = () => {
             </Head>
             <Header />
             <section className="section">
-                <div className="container mt-12 lg:w-10/12">
-                    <div className="xmasonry-container grid grid-cols-2 gap-5">
-                        {photos?.map(pic => {
-                            return (
-                                <div
-                                    key={pic.title}
-                                    className="xmasonry-brick rounded-sm bg-white p-2"
-                                >
-                                    <Image
-                                        width={pic.width}
-                                        height={pic.height}
-                                        src={`/img/photography/${pic.image}`}
-                                        alt={pic.title}
-                                        className="w-full flex-auto rounded-sm"
-                                    />
-                                </div>
-                            )
-                        })}
+                <div className="container mt-12 mb-12 lg:w-10/12">
+                    <div className="grid gap-2 md:grid-cols-2">
+                        {photos?.map(pic => (
+                            <Photo
+                                key={pic.title}
+                                image={pic.image}
+                                title={pic.title}
+                                height={pic.height}
+                                width={pic.width}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

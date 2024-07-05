@@ -23,6 +23,12 @@ const Header: FC = () => {
                     >
                         Creative
                     </Link>
+                    <Link
+                        href="/photography"
+                        className="mx-1 hover:underline hover:opacity-50 sm:mx-2"
+                    >
+                        Photography
+                    </Link>
                 </div>
             </div>
         </header>

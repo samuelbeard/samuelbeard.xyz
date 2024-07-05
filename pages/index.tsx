@@ -3,6 +3,7 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import { NextPage } from "next"
 import Link from "next/link"
+import HomeLink from "../components/HomeLink"
 
 const Home: NextPage = () => {
     return (
@@ -17,8 +18,8 @@ const Home: NextPage = () => {
                     <div className="h-1/2 w-full px-3">
                         <div className="animate-in flex h-full items-center rounded-xl bg-dark-blue p-10">
                             <div>
-                                <h1 className="text-3xl font-bold text-white sm:text-8xl">
-                                    Samuel Beard
+                                <h1 className="text-3xl font-bold text-white sm:text-9xl">
+                                    SAMUEL BEARD
                                 </h1>
                                 <h3 className="text-sm text-white sm:text-3xl">
                                     Web and Software Developer
@@ -27,15 +28,11 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                     <div className="flex w-full flex-col justify-around md:h-1/2 md:flex-row">
-                        <div className="w-full pt-3 pl-3 pr-3 md:h-full md:w-1/3 md:py-3 md:pr-0">
-                            <Link
-                                href="/blog"
-                                className="animate-in flex h-full items-center justify-center rounded-xl bg-green p-7 transition-all hover:bg-opacity-80"
-                                style={{ animationDelay: "0.5s" }}
-                            >
-                                <h2 className="h2 text-4xl text-white">Blog</h2>
-                            </Link>
-                        </div>
+                        <HomeLink href="/blog" animationDelay="0.5s">
+                            <h2 className="h2 text-[100px] text-white md:text-8xl lg:text-[150px] xl:text-[175px]">
+                                BLOG
+                            </h2>
+                        </HomeLink>
                         <div className="w-full p-3 md:w-1/3">
                             <Link
                                 href="/creative/days"
@@ -56,11 +53,13 @@ const Home: NextPage = () => {
                         <div className="h-full w-full pr-3 pl-3 md:w-1/3 md:py-3 md:pl-0">
                             <Link
                                 href="/creative/qrcode"
-                                className="animate-in relative flex h-full flex-col items-center justify-center rounded-xl bg-yellow p-7 transition-all hover:bg-opacity-80"
+                                className="animate-in relative flex h-full flex-col items-center justify-center overflow-hidden rounded-xl bg-yellow p-7 text-center transition-all hover:bg-opacity-80"
                                 style={{ animationDelay: "1.5s" }}
                             >
-                                <h2 className="h2 text-4xl text-zinc-900">
-                                    QR Generator
+                                <h2 className="h2 text-6xl text-zinc-900">
+                                    QR
+                                    <br />
+                                    GENERATOR
                                 </h2>
                             </Link>
                         </div>
