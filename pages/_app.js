@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
                 <meta property="og:url" content="https://samuelbeard.xyz" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Samuel Beard" />
-                <meta property="og:description" content="undefined" />
+                <meta property="og:description" content="My Website" />
                 <meta property="og:image" content="" />
 
                 <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
                     content="https://samuelbeard.xyz"
                 />
                 <meta name="twitter:title" content="Samuel Beard" />
-                <meta name="twitter:description" content="undefined" />
+                <meta name="twitter:description" content="My Website" />
                 <meta name="twitter:image" content="" />
             </Head>
             <Component {...pageProps} />

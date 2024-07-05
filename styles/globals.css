@@ -173,3 +173,30 @@
         transform: translateY(0);
     }
 }
+
+.masonry-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+    height: 1000px;
+}
+
+.masonry-brick {
+    width: 49%;
+    margin-bottom: 20px;
+}
+
+.masonry-brick::before {
+    counter-increment: items;
+    /*content: counter(items); */
+}
+
+/* Re-order items into 3 rows */
+.masonry-brick:nth-child(odd) {
+    order: 1;
+}
+.masonry-brick:nth-child(even) {
+    order: 2;
+}
