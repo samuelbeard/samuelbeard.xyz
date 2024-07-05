@@ -28,5 +28,36 @@
         "image": "steps.jpg",
         "width": 4695,
         "height": 6697
+    },
+    {
+        "title": "Sign",
+        "image": "sign.jpg",
+        "width": 4024,
+        "height": 6026
+    },
+    {
+        "title": "Sheep 1",
+        "image": "sheep-1.jpg",
+        "width": 4024,
+        "height": 6026
+    },
+    {
+        "title": "Sign 2",
+        "image": "sign-2.jpg",
+        "width": 4024,
+        "height": 6026
+    },
+    {
+        "title": "Sheep 2",
+        "image": "sheep-2.jpg",
+        "width": 6026,
+        "height": 4024
+    },
+    {
+        "title": "Road",
+        "image": "road.jpg",
+        "width": 6026,
+        "height": 4024
     }
+    
 ]
