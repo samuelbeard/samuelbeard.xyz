@@ -3,7 +3,7 @@ import { FaBaby, FaCode, FaSpinner } from "react-icons/fa6"
 import { FaBirthdayCake } from "react-icons/fa"
 import { GiLinkedRings } from "react-icons/gi"
 import { TbParachute } from "react-icons/tb"
-import { RiAB } from "react-icons/ri"
+import React from "react"
 
 interface IDay {
     date: string
@@ -13,7 +13,7 @@ interface IDay {
 
 const birthDate = "1991-09-27"
 const significantDates = [
-    { date: "1991-09-27", event: "The day I was born", icon: <FaBaby /> },
+    { date: "1991-09-27", event: "Hello World", icon: <FaBaby /> },
     {
         date: "1992-09-27",
         event: "My first birthday",

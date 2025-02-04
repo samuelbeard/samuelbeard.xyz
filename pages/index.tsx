@@ -24,6 +24,12 @@ const Home: NextPage = () => {
                                 <h3 className="text-sm text-white sm:text-3xl">
                                     Web and Software Developer
                                 </h3>
+                                <h3 className="text-sm text-white sm:text-3xl">
+                                    Photographer
+                                </h3>
+                                <h3 className="text-sm text-white sm:text-3xl">
+                                    Musician
+                                </h3>
                             </div>
                         </div>
                     </div>
