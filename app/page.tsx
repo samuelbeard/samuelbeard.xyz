@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, MapPin, Sparkles } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const services = [
   "Church websites that feel current without feeling corporate",
@@ -54,12 +55,12 @@ export default function Home() {
                 Start a conversation{" "}
                 <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </a>
-              <a
+              <Link
                 className="inline-flex items-center justify-center border border-line/25 bg-card/60 px-6 py-4 font-display text-sm font-bold uppercase tracking-[0.16em] transition hover:-translate-y-1 hover:border-primary hover:bg-card focus:outline-none focus:ring-2 focus:ring-ring"
-                href="#services"
+                href="/work"
               >
                 See what I do
-              </a>
+              </Link>
             </div>
           </div>
 
