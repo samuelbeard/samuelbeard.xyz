@@ -220,14 +220,6 @@
   background-size: 44px 44px;
 }
 
-@utility grain {
-  background-image: radial-gradient(
-    hsl(var(--line) / 0.08) 0.6px,
-    transparent 0.6px
-  );
-  background-size: 12px 12px;
-}
-
 @layer components {
   .bg-ink-depth {
     background-image: var(--gradient-ink);

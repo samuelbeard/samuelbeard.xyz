@@ -1,4 +1,6 @@
-import { ArrowRight, CheckCircle2, Mail, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, MapPin, Sparkles } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const services = [
   "Church websites that feel current without feeling corporate",
@@ -26,25 +28,9 @@ const values = [
 
 export default function Home() {
   return (
-    <main
-      className="min-h-screen overflow-hidden bg-hero-field text-foreground"
-      // style={
-      //   {
-      //     "--spot-x": `${spot.x}%`,
-      //     "--spot-y": `${spot.y}%`,
-      //   } as React.CSSProperties
-      // }
-    >
+    <>
       <section className="church-grid relative min-h-[92vh] px-5 py-6 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-7xl items-center justify-between border-b border-line/15 pb-5 font-display text-sm font-semibold uppercase tracking-[0.18em]">
-          <span>Samuel Beard</span>
-          <a
-            className="rounded-sm px-2 py-1 transition hover:bg-primary hover:text-primary-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-            href="mailto:samuel@samuelbeard.xyz"
-          >
-            Email me
-          </a>
-        </div>
+        <Header />
 
         <div className="mx-auto grid max-w-7xl gap-12 pb-12 pt-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:pt-24">
           <div className="animate-rise">
@@ -78,7 +64,6 @@ export default function Home() {
           </div>
 
           <aside className="relative animate-drift bg-ink-depth p-6 text-surface-strong-foreground shadow-soft lg:mb-6">
-            <div className="grain absolute inset-0 opacity-30" />
             <div className="relative border border-surface-strong-foreground/20 p-6">
               <p className="font-display text-sm font-bold uppercase tracking-[0.2em] text-accent">
                 A better first impression
@@ -143,24 +128,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-ink-depth px-5 py-16 text-surface-strong-foreground sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="font-display text-sm font-bold uppercase tracking-[0.2em] text-accent">
-              Ready when you are
-            </p>
-            <h2 className="mt-4 max-w-3xl font-display text-4xl font-extrabold leading-tight sm:text-5xl">
-              Tell me what your church needs online. I’ll keep it practical.
-            </h2>
-          </div>
-          <a
-            className="inline-flex items-center justify-center gap-2 bg-accent px-6 py-4 font-display text-sm font-bold uppercase tracking-[0.16em] text-accent-foreground transition hover:-translate-y-1 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-accent"
-            href="mailto:samuel@samuelbeard.xyz?subject=Church%20website%20enquiry"
-          >
-            <Mail className="h-4 w-4" /> Get in touch
-          </a>
-        </div>
-      </section>
-    </main>
+      <Footer />
+    </>
   );
 }
